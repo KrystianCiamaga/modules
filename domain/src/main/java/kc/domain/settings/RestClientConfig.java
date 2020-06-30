@@ -9,6 +9,7 @@ import org.springframework.data.elasticsearch.config.AbstractElasticsearchConfig
 
 
 @Configuration
+@DependsOn("commandRunner")
 public class RestClientConfig extends AbstractElasticsearchConfiguration {
 
     BaseSettingsConfiguration baseSettingsConfiguration;
@@ -19,7 +20,6 @@ public class RestClientConfig extends AbstractElasticsearchConfiguration {
     }
 
     @Override
-    @DependsOn("command")
     public RestHighLevelClient elasticsearchClient() {
         ClientConfiguration clientConfiguration = ClientConfiguration.builder()
                 .connectedTo(baseSettingsConfiguration.getBaseSetting().getDatabaseHost()

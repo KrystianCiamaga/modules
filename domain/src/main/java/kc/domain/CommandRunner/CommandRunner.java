@@ -33,7 +33,8 @@ public class CommandRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-            //baseSettingsConfiguration.loadSettingsFromFile(path);
+
+        //baseSettingsConfiguration.loadSettingsFromFile(path);
 
        // baseSettingsConfiguration.setBaseSetting(LocalBaseSettings.getLocalBaseSettings());
 

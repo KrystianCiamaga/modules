@@ -1,0 +1,6 @@
+kc/mocks/LocalElasticSearch$PluginConfigurableNode.class
+kc/mocks/LocalDatabases.class
+kc/mocks/LocalPlatform.class
+kc/mocks/BaseSetting.class
+kc/mocks/LocalBaseSettings.class
+kc/mocks/LocalElasticSearch.class

@@ -109,8 +109,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.1.RELEASE</version>
             </plugin>
-        </plugins>
 
+        </plugins>
     </build>
     <!-- include below build tag to your existing pom.xml  -->
 

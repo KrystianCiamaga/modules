@@ -37,8 +37,8 @@ public class AssetController {
 
 
     @PostMapping
-    public void addAsset(@RequestBody Asset assetDto) throws IOException {
-        assetServiceImlp.addAsset(assetDto);
+    public String addAsset(@RequestBody Asset assetDto) throws IOException {
+       return assetServiceImlp.addAsset(assetDto);
     }
 
     @PutMapping("{id}")

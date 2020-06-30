@@ -7,4 +7,6 @@ public class LocalDatabases {
        LocalElasticSearch.start();
     }
 
+    public LocalDatabases() {
+    }
 }

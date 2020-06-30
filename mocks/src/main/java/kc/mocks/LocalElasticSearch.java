@@ -15,6 +15,8 @@ import java.util.HashMap;
 
 public class LocalElasticSearch {
 
+    public LocalElasticSearch() {
+    }
 
     public static void start() {
         Settings settings = Settings.builder()

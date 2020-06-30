@@ -1,5 +1,6 @@
 package kc.mocks;
 
+
 import kc.domain.SpringBootApplicationn;
 import org.elasticsearch.node.NodeValidationException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +12,13 @@ public class LocalPlatform {
 
         public static void main(String[] args) throws NodeValidationException {
 
-
             LocalDatabases.start();
 
-            //SpringApplication springApplication = new SpringApplication(SpringBootApplicationn.class);
+            SpringApplication springApplication = new SpringApplication(SpringBootApplicationn.class);
 
-            //springApplication.run();
+            springApplication.run();
+
+            //BaseSetting baseSetting = LocalBaseSettings.getLocalBaseSettings();
 
 
         }
