@@ -9,7 +9,6 @@ import org.springframework.data.elasticsearch.config.AbstractElasticsearchConfig
 
 
 @Configuration
-@DependsOn("commandRunner")
 public class RestClientConfig extends AbstractElasticsearchConfiguration {
 
     BaseSettingsConfiguration baseSettingsConfiguration;

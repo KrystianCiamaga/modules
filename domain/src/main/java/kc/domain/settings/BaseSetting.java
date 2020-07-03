@@ -1,6 +1,7 @@
 package kc.domain.settings;
 
 
+import kc.domain.enums.Environment;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,10 +15,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class BaseSetting {
 
+    private Environment environment;
     private int port;
-
     private String databaseHost;
-
     private int databasePort;
 
 }

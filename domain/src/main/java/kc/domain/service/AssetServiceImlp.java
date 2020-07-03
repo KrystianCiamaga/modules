@@ -34,6 +34,8 @@ public class AssetServiceImlp implements AssetService {
         this.elasticsearchOperations = elasticsearchOperations;
     }
 
+
+
     @Override
     public String addAsset(Asset asset) throws IOException {
 
@@ -41,6 +43,9 @@ public class AssetServiceImlp implements AssetService {
                 .withId(asset.getId())
                 .withObject(asset)
                 .build();
+
+
+
         return indexQuery.getId();
 
     }

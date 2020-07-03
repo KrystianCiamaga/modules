@@ -35,7 +35,6 @@ public class LocalElasticSearch {
             e.printStackTrace();
         }
 
-        //SpringApplication.run(DemoApplication.class, args);
     }
 
     private static class PluginConfigurableNode extends Node {
