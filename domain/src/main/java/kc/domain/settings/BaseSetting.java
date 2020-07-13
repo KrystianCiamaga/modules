@@ -15,7 +15,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class BaseSetting {
 
-    private Environment environment;
     private int port;
     private String databaseHost;
     private int databasePort;

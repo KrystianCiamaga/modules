@@ -3,14 +3,21 @@ package kc.domain.repository;
 
 
 import kc.domain.entity.Asset;
+import lombok.SneakyThrows;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.common.xcontent.XContentType;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.elasticsearch.core.query.IndexQuery;
+import org.springframework.data.elasticsearch.core.query.IndexQueryBuilder;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -24,7 +31,8 @@ public class AssetRepository implements PagingAndSortingRepository<Asset, String
     }
 
     @Override
-    public Iterable<Asset> findAll(Sort sort) {
+    public List<Asset> findAll(Sort sort) {
+
         return null;
     }
 
@@ -33,8 +41,16 @@ public class AssetRepository implements PagingAndSortingRepository<Asset, String
         return null;
     }
 
+
+    @SneakyThrows
     @Override
     public <S extends Asset> S save(S s) {
+        IndexRequest indexRequest = new IndexRequest("abstract");
+        indexRequest.id("10");
+        indexRequest.source(s, XContentType.JSON);
+
+        restclient.index(indexRequest,RequestOptions.DEFAULT);
+
         return null;
     }
 

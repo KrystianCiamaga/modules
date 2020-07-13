@@ -39,14 +39,9 @@ public class AssetServiceImlp implements AssetService {
     @Override
     public String addAsset(Asset asset) throws IOException {
 
-        IndexQuery indexQuery = new IndexQueryBuilder()
-                .withId(asset.getId())
-                .withObject(asset)
-                .build();
+        assetRepository.save(asset);
 
-
-
-        return indexQuery.getId();
+        return "indexQuery.getId();";
 
     }
 
@@ -57,11 +52,10 @@ public class AssetServiceImlp implements AssetService {
 
 
   @Override
-    public List<Asset> findAllAssets(int pageNumber, int pageSize) {
+    public List<Asset> findAllAssets() {
 
 
-        return assetRepository.findAll(PageRequest.of(pageNumber,pageSize)).stream()
-                .collect(Collectors.toList());
+        return (List<Asset>) assetRepository.findAll();
     }
 
     @Override

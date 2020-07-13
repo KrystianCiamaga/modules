@@ -20,10 +20,20 @@ public class AssetController {
     }
 
 
-    @GetMapping("{pageNumber}/{pageSize}")
-    public List<Asset> getAllAssets(@PathVariable("pageNumber") final Integer pageNumber, @PathVariable("pageSize") final Integer pageSize){
-        return assetServiceImlp.findAllAssets(pageNumber,pageSize);
+   /* @GetMapping()
+    public List<Asset> getAllAssets() {
+        return assetServiceImlp.findAllAssets();
+    }*/
+
+
+
+
+    @GetMapping()
+    public String getAllAssets() {
+        return "ALL ASSETS";
     }
+
+
 
     @GetMapping("{id}")
     public Asset getAssetById(@PathVariable String id){

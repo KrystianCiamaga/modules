@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="domain" target="1.8" />
-      <module name="mocks" target="1.8" />
+      <module name="mocks" target="11" />
       <module name="Modules" target="1.8" />
     </bytecodeTargetLevel>
   </component>

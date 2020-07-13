@@ -11,7 +11,7 @@ import java.util.List;
 public interface AssetService {
 
 
-    List<Asset> findAllAssets(int pageNumber, int pageSize);
+    List<Asset> findAllAssets();
 
     Asset findAssetById(String id);
 
