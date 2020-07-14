@@ -26,13 +26,9 @@ public class AssetServiceImlp implements AssetService {
 
 
 
+    @Autowired
     private  AssetRepository assetRepository;
-   private  ElasticsearchOperations elasticsearchOperations;
 
-    public AssetServiceImlp(AssetRepository assetRepository, ElasticsearchOperations elasticsearchOperations) {
-        this.assetRepository = assetRepository;
-        this.elasticsearchOperations = elasticsearchOperations;
-    }
 
 
 
@@ -46,14 +42,8 @@ public class AssetServiceImlp implements AssetService {
     }
 
 
-    public AssetServiceImlp(AssetRepository assetRepository) {
-        this.assetRepository = assetRepository;
-    }
-
-
   @Override
     public List<Asset> findAllAssets() {
-
 
         return (List<Asset>) assetRepository.findAll();
     }

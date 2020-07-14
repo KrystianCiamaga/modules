@@ -1,10 +1,12 @@
 package kc.domain.CommandRunner;
 
 
+import kc.domain.entity.Asset;
 import kc.domain.enums.Environment;
+import kc.domain.repository.AssetRepository;
 import kc.domain.settings.BaseSetting;
 import kc.domain.settings.BaseSettingsConfiguration;
-import kc.domain.settings.RestClientConfig;
+
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +26,7 @@ public class CommandRunner implements CommandLineRunner {
     BaseSettingsConfiguration baseSettingsConfiguration;
 
     @Autowired
-    RestClientConfig restClientConfig;
-
+    AssetRepository assetRepository;
 
     public static Environment environment;
 
@@ -37,6 +38,7 @@ public class CommandRunner implements CommandLineRunner {
 
             baseSettingsConfiguration.getBaseSetting().setDatabaseHost("localhost");
             baseSettingsConfiguration.getBaseSetting().setPort(1212);
+            baseSettingsConfiguration.getBaseSetting().setDatabasePort(9200);
             log.info("JESTEM Z LOCALPLATFORM");
 
 

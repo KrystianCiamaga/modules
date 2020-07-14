@@ -18,12 +18,17 @@ public class RestClientConfig extends AbstractElasticsearchConfiguration {
 
     }
 
+
+
     @Override
     public RestHighLevelClient elasticsearchClient() {
-        ClientConfiguration clientConfiguration = ClientConfiguration.builder()
+       /* ClientConfiguration clientConfiguration = ClientConfiguration.builder()
                 .connectedTo(baseSettingsConfiguration.getBaseSetting().getDatabaseHost()
                 +":"+baseSettingsConfiguration.getBaseSetting().getDatabasePort())
-                .build();
+                .build();*/
+
+       ClientConfiguration clientConfiguration = ClientConfiguration.builder()
+               .connectedTo("localhost:9200").build();
 
         return RestClients.create(clientConfiguration).rest();
     }

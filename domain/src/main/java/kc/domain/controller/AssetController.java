@@ -20,17 +20,9 @@ public class AssetController {
     }
 
 
-   /* @GetMapping()
+    @GetMapping()
     public List<Asset> getAllAssets() {
         return assetServiceImlp.findAllAssets();
-    }*/
-
-
-
-
-    @GetMapping()
-    public String getAllAssets() {
-        return "ALL ASSETS";
     }
 
 

@@ -3,14 +3,18 @@ package kc.domain.repository;
 
 
 import kc.domain.entity.Asset;
+import kc.domain.settings.JacksonConfiguration;
 import lombok.SneakyThrows;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.elasticsearch.client.ClientConfiguration;
+import org.springframework.data.elasticsearch.client.RestClients;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.data.elasticsearch.core.query.IndexQueryBuilder;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
@@ -26,9 +30,36 @@ public class AssetRepository implements PagingAndSortingRepository<Asset, String
 
     private RestHighLevelClient restclient;
 
+    @Autowired
+    JacksonConfiguration jackson;
+
     public AssetRepository(RestHighLevelClient restclient) {
         this.restclient = restclient;
     }
+
+
+    @Override
+    public Iterable<Asset> findAll() {
+
+
+        return null;
+    }
+
+
+
+    @SneakyThrows
+    @Override
+    public <S extends Asset> S save(S s) {
+
+        IndexRequest indexRequest = new IndexRequest("abstract");
+        indexRequest.id("10");
+        indexRequest.source(jackson.objectMapper().writeValueAsString(s),XContentType.JSON);
+
+        restclient.index(indexRequest,RequestOptions.DEFAULT);
+
+        return null;
+    }
+
 
     @Override
     public List<Asset> findAll(Sort sort) {
@@ -41,18 +72,6 @@ public class AssetRepository implements PagingAndSortingRepository<Asset, String
         return null;
     }
 
-
-    @SneakyThrows
-    @Override
-    public <S extends Asset> S save(S s) {
-        IndexRequest indexRequest = new IndexRequest("abstract");
-        indexRequest.id("10");
-        indexRequest.source(s, XContentType.JSON);
-
-        restclient.index(indexRequest,RequestOptions.DEFAULT);
-
-        return null;
-    }
 
     @Override
     public <S extends Asset> Iterable<S> saveAll(Iterable<S> iterable) {
@@ -69,10 +88,7 @@ public class AssetRepository implements PagingAndSortingRepository<Asset, String
         return false;
     }
 
-    @Override
-    public Iterable<Asset> findAll() {
-        return null;
-    }
+
 
     @Override
     public Iterable<Asset> findAllById(Iterable<String> iterable) {

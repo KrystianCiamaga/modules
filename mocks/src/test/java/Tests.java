@@ -10,6 +10,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.configuration.IMockitoConfiguration;
 import org.slf4j.Logger;
@@ -33,17 +34,7 @@ import static org.mockito.Mockito.when;
 @ExtendWith({LocalPlatform.class})
 public class Tests {
 
-
-
-
     static Logger logger=LoggerFactory.getLogger(Tests.class);
-
-    @BeforeEach
-    public  void start(){
-        LocalDatabases.start();
-        logger.info("DATABASE STARTED");
-    }
-
 
 @Test
 public void getAllAssetsTest() throws IOException, InterruptedException {
