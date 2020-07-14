@@ -24,7 +24,10 @@ public class LocalElasticSearch {
                 .put("discovery.type", "single-node")
                 .put("cluster.name", "test-cluster")
                 .put("node.name", "test-node")
-                .put(Environment.PATH_HOME_SETTING.getKey(), "/tmp").build();
+                .put("discovery.type","single-node")
+                .put("http.host","localhost")
+                .put("path.data","/tmp/elasticsearch/data")
+                .put(Environment.PATH_HOME_SETTING.getKey(), "/tmp/elasticsearch").build();
 
 
         Node node = new PluginConfigurableNode(settings, Collections.singletonList(Netty4Plugin.class));
@@ -43,8 +46,4 @@ public class LocalElasticSearch {
             super(InternalSettingsPreparer.prepareEnvironment(settings, new HashMap<>(), null, null), plugins, false);
         }
     }
-
-
-
-
 }

@@ -6,6 +6,7 @@ import kc.domain.entity.Asset;
 import kc.domain.settings.JacksonConfiguration;
 import lombok.SneakyThrows;
 import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.xcontent.XContentType;
@@ -28,14 +29,12 @@ import java.util.Optional;
 public class AssetRepository implements PagingAndSortingRepository<Asset, String> {
 
 
+    @Autowired
     private RestHighLevelClient restclient;
 
     @Autowired
     JacksonConfiguration jackson;
 
-    public AssetRepository(RestHighLevelClient restclient) {
-        this.restclient = restclient;
-    }
 
 
     @Override
@@ -55,7 +54,7 @@ public class AssetRepository implements PagingAndSortingRepository<Asset, String
         indexRequest.id("10");
         indexRequest.source(jackson.objectMapper().writeValueAsString(s),XContentType.JSON);
 
-        restclient.index(indexRequest,RequestOptions.DEFAULT);
+        IndexResponse response = restclient.index(indexRequest,RequestOptions.DEFAULT);
 
         return null;
     }

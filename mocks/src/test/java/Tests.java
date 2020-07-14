@@ -28,13 +28,14 @@ import java.net.http.HttpResponse;
 import java.sql.SQLOutput;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @ExtendWith({LocalPlatform.class})
 public class Tests {
 
-    static Logger logger=LoggerFactory.getLogger(Tests.class);
+
 
 @Test
 public void getAllAssetsTest() throws IOException, InterruptedException {
@@ -49,6 +50,8 @@ public void getAllAssetsTest() throws IOException, InterruptedException {
     HttpResponse<String> response = httpClient.send(httpRequest,
             HttpResponse.BodyHandlers.ofString());
 
+
+   // assertEquals()
 
     System.out.println(response.body());
 
