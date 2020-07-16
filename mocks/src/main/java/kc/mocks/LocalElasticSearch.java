@@ -24,9 +24,9 @@ public class LocalElasticSearch {
                 .put("discovery.type", "single-node")
                 .put("cluster.name", "test-cluster")
                 .put("node.name", "test-node")
-                .put("discovery.type","single-node")
+              /*  .put("discovery.type","single-node")
                 .put("http.host","localhost")
-                .put("path.data","/tmp/elasticsearch/data")
+                .put("path.data","/tmp/elasticsearch/data")*/
                 .put(Environment.PATH_HOME_SETTING.getKey(), "/tmp/elasticsearch").build();
 
 

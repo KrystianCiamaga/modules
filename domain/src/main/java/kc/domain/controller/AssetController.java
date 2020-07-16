@@ -22,13 +22,13 @@ public class AssetController {
 
     @GetMapping()
     public List<Asset> getAllAssets() {
+        System.out.println("WSZEDLEM TUTAJ");
         return assetServiceImlp.findAllAssets();
     }
 
-
-
     @GetMapping("{id}")
     public Asset getAssetById(@PathVariable String id){
+
         return assetServiceImlp.findAssetById(id);
     }
 
@@ -39,7 +39,7 @@ public class AssetController {
 
 
     @PostMapping
-    public String addAsset(@RequestBody Asset assetDto) throws IOException {
+    public Asset addAsset(@RequestBody Asset assetDto) throws IOException {
        return assetServiceImlp.addAsset(assetDto);
     }
 

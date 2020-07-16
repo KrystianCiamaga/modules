@@ -11,6 +11,7 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.data.elasticsearch.core.query.IndexQueryBuilder;
@@ -25,19 +26,15 @@ import java.util.stream.Collectors;
 public class AssetServiceImlp implements AssetService {
 
 
-
     @Autowired
     private  AssetRepository assetRepository;
 
 
 
-
     @Override
-    public String addAsset(Asset asset) throws IOException {
+    public Asset addAsset(Asset asset) throws IOException {
 
-        assetRepository.save(asset);
-
-        return "indexQuery.getId();";
+        return  assetRepository.save(asset);
 
     }
 
@@ -45,7 +42,7 @@ public class AssetServiceImlp implements AssetService {
   @Override
     public List<Asset> findAllAssets() {
 
-        return (List<Asset>) assetRepository.findAll();
+        return assetRepository.findAll();
     }
 
     @Override
@@ -58,14 +55,10 @@ public class AssetServiceImlp implements AssetService {
 
     }
 
-
-
     @Override
     public Asset deleteAsset(String id) {
 
         Optional<Asset> asset =assetRepository.findById(id);
-
-        assetRepository.deleteById(id);
 
         return asset.orElse(null);
 

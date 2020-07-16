@@ -2,121 +2,111 @@
 package kc.domain.repository;
 
 
+import com.fasterxml.jackson.databind.MappingIterator;
 import kc.domain.entity.Asset;
 import kc.domain.settings.JacksonConfiguration;
 import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
+import org.elasticsearch.action.DocWriteResponse;
+import org.elasticsearch.action.get.GetRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.action.search.SearchRequest;
+import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.search.aggregations.Aggregation;
+import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.elasticsearch.client.ClientConfiguration;
 import org.springframework.data.elasticsearch.client.RestClients;
+import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.data.elasticsearch.core.query.IndexQueryBuilder;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Repository
-public class AssetRepository implements PagingAndSortingRepository<Asset, String> {
+@Slf4j
+public class AssetRepository {
+
 
 
     @Autowired
     private RestHighLevelClient restclient;
-
     @Autowired
-    JacksonConfiguration jackson;
+    private JacksonConfiguration jackson;
 
-
-
-    @Override
-    public Iterable<Asset> findAll() {
-
-
-        return null;
-    }
 
 
 
     @SneakyThrows
-    @Override
     public <S extends Asset> S save(S s) {
 
-        IndexRequest indexRequest = new IndexRequest("abstract");
-        indexRequest.id("10");
-        indexRequest.source(jackson.objectMapper().writeValueAsString(s),XContentType.JSON);
+        IndexRequest indexRequest = new IndexRequest("asset");
+        indexRequest.id(s.getId());
+        indexRequest.source(jackson.objectMapper().writeValueAsString(s), XContentType.JSON);
+        IndexResponse index = restclient.index(indexRequest, RequestOptions.DEFAULT);
 
-        IndexResponse response = restclient.index(indexRequest,RequestOptions.DEFAULT);
+        // TODO: 16/07/2020 change return
 
-        return null;
+        return s;
     }
 
 
-    @Override
-    public List<Asset> findAll(Sort sort) {
+    @SneakyThrows
+    public List<Asset> findAll() {
+        SearchRequest searchRequest = new SearchRequest("asset");
 
-        return null;
+        SearchResponse searchResponse =  restclient.search(searchRequest, RequestOptions.DEFAULT);
+
+        SearchHit[] hits = searchResponse.getHits().getHits();
+
+        List<Asset> list=new ArrayList<>();
+
+        for (SearchHit hit : hits) {
+            String jsonString=hit.getSourceAsString();
+            Asset tmpCl=(Asset )jackson.objectMapper().reader().readValue(jsonString,Asset.class);
+            list.add(tmpCl);
+        }
+        return list;
     }
 
-    @Override
-    public Page<Asset> findAll(Pageable pageable) {
-        return null;
-    }
 
-
-    @Override
-    public <S extends Asset> Iterable<S> saveAll(Iterable<S> iterable) {
-        return null;
-    }
-
-    @Override
+    @SneakyThrows
     public Optional<Asset> findById(String s) {
-        return Optional.empty();
+
+        SearchRequest searchRequest = new SearchRequest("asset");
+
+        SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
+
+        sourceBuilder.query(QueryBuilders.termQuery("id", s));
+                searchRequest.source(sourceBuilder);
+        SearchResponse searchResponse = restclient.search(searchRequest,RequestOptions.DEFAULT);
+
+        SearchHit[] hits = searchResponse.getHits().getHits();
+
+        List<Asset> list=new ArrayList<>();
+
+        for (SearchHit hit : hits) {
+            String jsonString=hit.getSourceAsString();
+            Asset tmpCl=(Asset )jackson.objectMapper().reader().readValue(jsonString,Asset.class);
+            list.add(tmpCl);
+            System.out.println(tmpCl.getCategory());
+        }
+
+        return Optional.ofNullable(list.get(0));
     }
 
-    @Override
-    public boolean existsById(String s) {
-        return false;
-    }
 
-
-
-    @Override
-    public Iterable<Asset> findAllById(Iterable<String> iterable) {
-        return null;
-    }
-
-    @Override
-    public long count() {
-        return 0;
-    }
-
-    @Override
-    public void deleteById(String s) {
-
-    }
-
-    @Override
-    public void delete(Asset asset) {
-
-    }
-
-    @Override
-    public void deleteAll(Iterable<? extends Asset> iterable) {
-
-    }
-
-    @Override
-    public void deleteAll() {
-
-    }
 }
 

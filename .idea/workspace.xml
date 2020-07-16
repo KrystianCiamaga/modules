@@ -2,51 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f1ea522-eeae-4301-a613-e828de6c96b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_8_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_8_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_extras_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_extras_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_8_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_8_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_client_elasticsearch_rest_client_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_client_elasticsearch_rest_client_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_client_elasticsearch_rest_high_level_client_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_client_elasticsearch_rest_high_level_client_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_cli_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_cli_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_core_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_core_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_geo_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_geo_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_secure_sm_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_secure_sm_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_x_content_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_x_content_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_aggs_matrix_stats_client_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_aggs_matrix_stats_client_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_lang_mustache_client_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_lang_mustache_client_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_mapper_extras_client_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_mapper_extras_client_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_parent_join_client_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_parent_join_client_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_rank_eval_client_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_rank_eval_client_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_transport_netty4_client_7_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_transport_netty4_client_7_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_30.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Modules.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/domain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/AssetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/AssetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Asset.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/AssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/AssetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/AssetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/AssetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/AssetServiceImlp.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/AssetServiceImlp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/BaseSettingsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/BaseSettingsConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/JacksonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/JacksonConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/RestClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/AssetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/AssetController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/entity/Asset.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/entity/Asset.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/AssetRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/AssetRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/AssetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/AssetService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/AssetServiceImlp.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/AssetServiceImlp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/BaseSettingsConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/BaseSettingsConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/JacksonConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/JacksonConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/RestClientConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/RestClientConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mocks/mocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/mocks.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mocks/src/main/java/kc/mocks/LocalElasticSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/src/main/java/kc/mocks/LocalElasticSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mocks/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/src/test/java/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/target/classes/kc/mocks/LocalElasticSearch$PluginConfigurableNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/target/classes/kc/mocks/LocalElasticSearch$PluginConfigurableNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mocks/target/classes/kc/mocks/LocalElasticSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/target/classes/kc/mocks/LocalElasticSearch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mocks/target/test-classes/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/target/test-classes/Tests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -120,7 +98,7 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/kc/domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LocalPlatform">
+  <component name="RunManager" selected="JUnit.Tests.getAllAssetsTest">
     <configuration name="LocalPlatform" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kc.mocks.LocalPlatform" />
       <module name="mocks" />
@@ -130,16 +108,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mocks" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="addTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,6 +127,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Tests" />
       <option name="METHOD_NAME" value="getAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.shouldReturnAssetWithCorrectId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mocks" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="shouldReturnAssetWithCorrectId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,18 +166,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.LocalPlatform" />
-      <item itemvalue="JUnit.Tests.addTest" />
       <item itemvalue="JUnit.Tests.getAllTest" />
       <item itemvalue="Spring Boot.SpringBootApplicationn" />
       <item itemvalue="JUnit.Tests.getAllAssetsTest" />
+      <item itemvalue="JUnit.Tests.shouldReturnAssetWithCorrectId" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LocalPlatform" />
         <item itemvalue="JUnit.Tests.getAllAssetsTest" />
+        <item itemvalue="JUnit.Tests.shouldReturnAssetWithCorrectId" />
+        <item itemvalue="Application.LocalPlatform" />
         <item itemvalue="Spring Boot.SpringBootApplicationn" />
         <item itemvalue="JUnit.Tests.getAllTest" />
-        <item itemvalue="JUnit.Tests.addTest" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +192,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593425033142</updated>
       <workItem from="1593425039437" duration="47373000" />
-      <workItem from="1594622931158" duration="22249000" />
+      <workItem from="1594622931158" duration="43248000" />
     </task>
     <servers />
   </component>
@@ -226,79 +204,80 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="400" y="115" key="#Project_Structure/0.0.1600.900@0.0.1600.900" timestamp="1593425664063" />
-    <state x="264" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593723009803">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state x="243" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594751639949">
+      <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state x="264" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1593723009803" />
+    <state x="243" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1600.813@0.23.1600.813" timestamp="1594751639949" />
     <state x="488" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593426068636">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="488" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1593426068636" />
-    <state x="613" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1594671776098">
+    <state x="613" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1594920193360">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="613" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1594671776098" />
+    <state x="613" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1594920193360" />
     <state x="538" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593720801800">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="538" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1593720801800" />
-    <state width="1558" height="303" key="GridCell.Tab.0.bottom" timestamp="1594750842376">
+    <state width="1558" height="245" key="GridCell.Tab.0.bottom" timestamp="1594924694126">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593450669197" />
-    <state width="1558" height="303" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1594750842376" />
+    <state width="1558" height="245" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1594924694126" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1594055507995" />
-    <state width="1558" height="303" key="GridCell.Tab.0.bottom/0.23.1600.813@0.23.1600.813" timestamp="1594750633332" />
-    <state width="1558" height="303" key="GridCell.Tab.0.center" timestamp="1594750842366">
+    <state width="1558" height="245" key="GridCell.Tab.0.bottom/0.23.1600.813@0.23.1600.813" timestamp="1594924560544" />
+    <state width="1558" height="245" key="GridCell.Tab.0.center" timestamp="1594924694110">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593450669194" />
-    <state width="1558" height="303" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1594750842366" />
+    <state width="1558" height="245" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1594924694110" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1594055507992" />
-    <state width="1558" height="303" key="GridCell.Tab.0.center/0.23.1600.813@0.23.1600.813" timestamp="1594750633326" />
-    <state width="1558" height="303" key="GridCell.Tab.0.left" timestamp="1594750842363">
+    <state width="1558" height="245" key="GridCell.Tab.0.center/0.23.1600.813@0.23.1600.813" timestamp="1594924560540" />
+    <state width="1558" height="245" key="GridCell.Tab.0.left" timestamp="1594924694106">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593450669193" />
-    <state width="1558" height="303" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1594750842363" />
+    <state width="1558" height="245" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1594924694106" />
     <state width="1558" height="245" key="GridCell.Tab.0.left/0.0.1600.900@0.23.1600.813" timestamp="1594735395749" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1594055507990" />
-    <state width="1558" height="303" key="GridCell.Tab.0.left/0.23.1600.813@0.23.1600.813" timestamp="1594750633318" />
-    <state width="1558" height="303" key="GridCell.Tab.0.right" timestamp="1594750842373">
+    <state width="1558" height="245" key="GridCell.Tab.0.left/0.23.1600.813@0.23.1600.813" timestamp="1594924560539" />
+    <state width="1558" height="245" key="GridCell.Tab.0.right" timestamp="1594924694121">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593450669196" />
-    <state width="1558" height="303" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1594750842373" />
+    <state width="1558" height="245" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1594924694121" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1594055507994" />
-    <state width="1558" height="303" key="GridCell.Tab.0.right/0.23.1600.813@0.23.1600.813" timestamp="1594750633328" />
-    <state width="1558" height="303" key="GridCell.Tab.1.bottom" timestamp="1594750841874">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state width="1558" height="245" key="GridCell.Tab.0.right/0.23.1600.813@0.23.1600.813" timestamp="1594924560543" />
+    <state width="1558" height="303" key="GridCell.Tab.1.bottom" timestamp="1594921100289">
+      <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593450140632" />
-    <state width="1558" height="303" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1594750841874" />
+    <state width="1558" height="303" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1594921049599" />
     <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1594055508007" />
-    <state width="1558" height="303" key="GridCell.Tab.1.bottom/0.23.1600.813@0.23.1600.813" timestamp="1594750632554" />
-    <state width="1558" height="303" key="GridCell.Tab.1.center" timestamp="1594750841870">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state width="1558" height="303" key="GridCell.Tab.1.bottom/0.23.1600.813@0.23.1600.813" timestamp="1594921100289" />
+    <state width="1558" height="303" key="GridCell.Tab.1.center" timestamp="1594921100286">
+      <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593450140629" />
-    <state width="1558" height="303" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1594750841870" />
+    <state width="1558" height="303" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1594921049596" />
     <state width="1398" height="245" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1594055508004" />
-    <state width="1558" height="303" key="GridCell.Tab.1.center/0.23.1600.813@0.23.1600.813" timestamp="1594750632549" />
-    <state width="1558" height="303" key="GridCell.Tab.1.left" timestamp="1594750841867">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state width="1558" height="303" key="GridCell.Tab.1.center/0.23.1600.813@0.23.1600.813" timestamp="1594921100286" />
+    <state width="1558" height="303" key="GridCell.Tab.1.left" timestamp="1594921100284">
+      <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593450140627" />
-    <state width="1558" height="303" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1594750841867" />
+    <state width="1558" height="303" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1594921049594" />
     <state width="1398" height="245" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1594055508001" />
-    <state width="1558" height="303" key="GridCell.Tab.1.left/0.23.1600.813@0.23.1600.813" timestamp="1594750632548" />
-    <state width="1558" height="303" key="GridCell.Tab.1.right" timestamp="1594750841872">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state width="1558" height="303" key="GridCell.Tab.1.left/0.23.1600.813@0.23.1600.813" timestamp="1594921100284" />
+    <state width="1558" height="303" key="GridCell.Tab.1.right" timestamp="1594921100287">
+      <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593450140630" />
-    <state width="1558" height="303" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1594750841872" />
+    <state width="1558" height="303" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1594921049598" />
     <state width="1398" height="245" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1594055508005" />
-    <state width="1558" height="303" key="GridCell.Tab.1.right/0.23.1600.813@0.23.1600.813" timestamp="1594750632552" />
+    <state width="1558" height="303" key="GridCell.Tab.1.right/0.23.1600.813@0.23.1600.813" timestamp="1594921100287" />
     <state width="1558" height="303" key="GridCell.Tab.2.bottom" timestamp="1593768615774">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -324,6 +303,10 @@
     </state>
     <state x="208" y="31" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1593445010827" />
     <state x="231" y="31" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1593466366390" />
+    <state x="538" y="210" key="extract.method.dialog" timestamp="1594832097228">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="538" y="210" key="extract.method.dialog/0.0.1600.900@0.0.1600.900" timestamp="1594832097228" />
     <state x="466" y="85" width="667" height="729" key="find.popup" timestamp="1594747103039">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -336,23 +319,12 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="562" y="63" key="refactoring.ChangeSignatureDialog/0.0.1600.900@0.0.1600.900" timestamp="1593502363772" />
-    <state x="428" y="196" width="745" height="676" key="search.everywhere.popup" timestamp="1594747073206">
+    <state x="428" y="196" width="745" height="676" key="search.everywhere.popup" timestamp="1594751596780">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593444977535" />
     <state width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.23.1440.813" timestamp="1593444909342" />
-    <state x="428" y="196" width="745" height="676" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1594747073206" />
+    <state x="428" y="196" width="745" height="676" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1594751596780" />
     <state x="385" y="196" key="search.everywhere.popup/0.23.1440.813@0.23.1440.813" timestamp="1593444909343" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/AssetRepository.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
