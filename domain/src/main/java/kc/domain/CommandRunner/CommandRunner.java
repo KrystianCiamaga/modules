@@ -34,7 +34,7 @@ public class CommandRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
 
-        if (environment == Environment.LOCAL) {
+  /*      if (environment == Environment.LOCAL) {
 
             baseSettingsConfiguration.getBaseSetting().setDatabaseHost("localhost");
             baseSettingsConfiguration.getBaseSetting().setPort(1212);
@@ -50,7 +50,8 @@ public class CommandRunner implements CommandLineRunner {
         }
 
     }
-
+*/
+    }
 }
 
 

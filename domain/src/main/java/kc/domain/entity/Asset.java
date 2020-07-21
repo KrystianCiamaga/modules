@@ -8,12 +8,14 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
+import java.util.List;
+
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(indexName = "asset")
+@Document(indexName = "assets")
 public class Asset  {
 
     @Id
@@ -21,4 +23,6 @@ public class Asset  {
 
     private String name;
     private String category;
+    private Double price;
+
 }

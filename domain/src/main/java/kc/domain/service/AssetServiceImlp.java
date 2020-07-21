@@ -56,11 +56,10 @@ public class AssetServiceImlp implements AssetService {
     }
 
     @Override
-    public Asset deleteAsset(String id) {
+    public void deleteAsset(String id) throws IOException {
 
-        Optional<Asset> asset =assetRepository.findById(id);
+      assetRepository.delete(id);
 
-        return asset.orElse(null);
 
     }
 

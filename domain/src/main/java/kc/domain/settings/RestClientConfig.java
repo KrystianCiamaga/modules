@@ -26,8 +26,6 @@ public class RestClientConfig extends AbstractElasticsearchConfiguration {
     }
 
 
-
-
     @Override
     @Bean
     public RestHighLevelClient elasticsearchClient()  {
@@ -40,15 +38,6 @@ public class RestClientConfig extends AbstractElasticsearchConfiguration {
        ClientConfiguration clientConfiguration = ClientConfiguration.builder()
                .connectedTo("localhost:9200").build();
 
-
-       /*try {
-           restHighLevelClient.ping(RequestOptions.DEFAULT);
-
-
-       }catch (IOException ex){
-           log.error(ex.getMessage());
-           throw new RuntimeException(ex);
-       }*/
 
         return RestClients.create(clientConfiguration).rest();
     }

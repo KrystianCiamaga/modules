@@ -26,6 +26,12 @@
 
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka -->
+
+
+
+
+
         <dependency>
             <groupId>kc</groupId>
             <artifactId>domain</artifactId>

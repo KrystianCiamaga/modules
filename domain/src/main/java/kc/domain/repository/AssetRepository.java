@@ -8,6 +8,7 @@ import kc.domain.settings.JacksonConfiguration;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.DocWriteResponse;
+import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.get.GetRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
@@ -33,6 +34,7 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
+import java.io.IOException;
 import java.util.*;
 
 @Repository
@@ -52,7 +54,7 @@ public class AssetRepository {
     @SneakyThrows
     public <S extends Asset> S save(S s) {
 
-        IndexRequest indexRequest = new IndexRequest("asset");
+        IndexRequest indexRequest = new IndexRequest("assets");
         indexRequest.id(s.getId());
         indexRequest.source(jackson.objectMapper().writeValueAsString(s), XContentType.JSON);
         IndexResponse index = restclient.index(indexRequest, RequestOptions.DEFAULT);
@@ -65,7 +67,7 @@ public class AssetRepository {
 
     @SneakyThrows
     public List<Asset> findAll() {
-        SearchRequest searchRequest = new SearchRequest("asset");
+        SearchRequest searchRequest = new SearchRequest("assets");
 
         SearchResponse searchResponse =  restclient.search(searchRequest, RequestOptions.DEFAULT);
 
@@ -75,7 +77,7 @@ public class AssetRepository {
 
         for (SearchHit hit : hits) {
             String jsonString=hit.getSourceAsString();
-            Asset tmpCl=(Asset )jackson.objectMapper().reader().readValue(jsonString,Asset.class);
+            Asset tmpCl=jackson.objectMapper().readValue(jsonString,Asset.class);
             list.add(tmpCl);
         }
         return list;
@@ -85,7 +87,8 @@ public class AssetRepository {
     @SneakyThrows
     public Optional<Asset> findById(String s) {
 
-        SearchRequest searchRequest = new SearchRequest("asset");
+
+        SearchRequest searchRequest = new SearchRequest("assets");
 
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 
@@ -105,6 +108,12 @@ public class AssetRepository {
         }
 
         return Optional.ofNullable(list.get(0));
+    }
+
+    public void delete(String id) throws IOException {
+
+        DeleteRequest deleteRequest = new DeleteRequest("assets",id);
+        restclient.delete(deleteRequest,RequestOptions.DEFAULT);
     }
 
 

@@ -33,7 +33,7 @@ public class AssetController {
     }
 
     @DeleteMapping("{id}")
-    public void deleteAssetById(@PathVariable String id){
+    public void deleteAssetById(@PathVariable String id) throws IOException {
         assetServiceImlp.deleteAsset(id);
     }
 

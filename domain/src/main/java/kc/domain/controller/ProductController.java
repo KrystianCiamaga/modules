@@ -1,9 +1,8 @@
-package kc.domain.controller;/*
-package krystianciamaga.com.demo.controller;
+package kc.domain.controller;
 
 
-import krystianciamaga.com.demo.entity.Product;
-import krystianciamaga.com.demo.service.ProductServiceImpl;
+import kc.domain.entity.Product;
+import kc.domain.service.ProductServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,9 +17,14 @@ public class ProductController {
     public ProductController(ProductServiceImpl productService) {
         this.productService = productService;
     }
+    @PostMapping
+    public void addProduct(@RequestBody Product product){
+        productService.saveProduct(product);
+    }
 
 
-    @GetMapping("{pageNumber}/{pageSize}")
+
+    /*@GetMapping("{pageNumber}/{pageSize}")
     public List<Product> getAllProducts(@PathVariable("pageNumber") final Integer pageNumber, @PathVariable("pageSize") final Integer pageSize){
         return productService.findAllProducts(pageNumber,pageSize);
     }
@@ -35,18 +39,15 @@ public class ProductController {
         productService.deleteProductById(id);
     }
 
-    @PostMapping
-    public void addProduct(@RequestBody Product productDto){
-        productService.addProduct(productDto);
+   oductService.addProduct(productDto);
     }
 
     @PutMapping("/{id}")
     public void updateProductById(@RequestBody Product productDto,@PathVariable String id){
         productService.updateProductById(productDto,id);
-    }
+    }*/
 
 
 
 
 }
-*/

@@ -17,7 +17,7 @@ public interface AssetService {
 
     Asset addAsset(Asset asset) throws IOException;
 
-    Asset deleteAsset(String id);
+    void deleteAsset(String id) throws IOException;
 
     Asset updateAssetById(Asset assetDto, String id);
 
