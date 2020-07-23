@@ -5,6 +5,7 @@ import kc.domain.entity.Product;
 import kc.domain.service.ProductServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -22,17 +23,18 @@ public class ProductController {
         productService.saveProduct(product);
     }
 
+    @GetMapping("/{id}")
+    public Product getProductById(@PathVariable String id) throws IOException {
+        return productService.findProductById(id);
+    }
 
 
-    /*@GetMapping("{pageNumber}/{pageSize}")
+   /* @GetMapping("{pageNumber}/{pageSize}")
     public List<Product> getAllProducts(@PathVariable("pageNumber") final Integer pageNumber, @PathVariable("pageSize") final Integer pageSize){
         return productService.findAllProducts(pageNumber,pageSize);
     }
 
-    @GetMapping("/{id}")
-    public Product getProductById(@PathVariable String id){
-        return productService.findProductById(id);
-    }
+
 
     @DeleteMapping("/{id}")
     public void removeProductById(@PathVariable String id){
@@ -45,9 +47,9 @@ public class ProductController {
     @PutMapping("/{id}")
     public void updateProductById(@RequestBody Product productDto,@PathVariable String id){
         productService.updateProductById(productDto,id);
-    }*/
+    }
 
-
+*/
 
 
 }

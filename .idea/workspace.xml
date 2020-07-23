@@ -2,59 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f1ea522-eeae-4301-a613-e828de6c96b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_4_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_2_5_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_2_5_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/KafkaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/KafkaController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/KafkaConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/Producer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/serializer/ProductSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Modules.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/domain.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/CommandRunner/CommandRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/CommandRunner/CommandRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/AssetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/AssetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Asset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Trade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/AssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/AssetRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/AssetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/AssetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/AssetServiceImlp.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/AssetServiceImlp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/RestClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/CommandRunner/CommandRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/CommandRunner/CommandRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/AssetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/AssetController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/ProductController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/entity/Asset.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/entity/Asset.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/AssetRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/AssetRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/AssetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/AssetService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/AssetServiceImlp.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/AssetServiceImlp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/RestClientConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/RestClientConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/mocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/mocks.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/src/test/java/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/target/test-classes/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/target/test-classes/Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/ProductServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -209,7 +190,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593425033142</updated>
       <workItem from="1593425039437" duration="47373000" />
-      <workItem from="1594622931158" duration="61866000" />
+      <workItem from="1594622931158" duration="73826000" />
     </task>
     <servers />
   </component>
@@ -230,71 +211,72 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="488" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1593426068636" />
-    <state x="613" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1595271838513">
+    <state x="613" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1595520435027">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="613" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1595271838513" />
+    <state x="613" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1595520435027" />
     <state x="538" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593720801800">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="538" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1593720801800" />
-    <state width="1558" height="303" key="GridCell.Tab.0.bottom" timestamp="1595285108632">
+    <state width="1558" height="274" key="GridCell.Tab.0.bottom" timestamp="1595522603314">
       <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593450669197" />
-    <state width="1558" height="303" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1595284953440" />
+    <state width="1558" height="303" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1595522312242" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1594055507995" />
-    <state width="1558" height="303" key="GridCell.Tab.0.bottom/0.23.1600.813@0.23.1600.813" timestamp="1595285108632" />
-    <state width="1558" height="303" key="GridCell.Tab.0.center" timestamp="1595285108612">
+    <state width="1558" height="274" key="GridCell.Tab.0.bottom/0.23.1600.813@0.23.1600.813" timestamp="1595522603314" />
+    <state width="1558" height="274" key="GridCell.Tab.0.center" timestamp="1595522603301">
       <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593450669194" />
-    <state width="1558" height="303" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1595284953435" />
+    <state width="1558" height="303" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1595522312237" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1594055507992" />
-    <state width="1558" height="303" key="GridCell.Tab.0.center/0.23.1600.813@0.23.1600.813" timestamp="1595285108612" />
-    <state width="1558" height="303" key="GridCell.Tab.0.left" timestamp="1595285108591">
+    <state width="1558" height="274" key="GridCell.Tab.0.center/0.23.1600.813@0.23.1600.813" timestamp="1595522603301" />
+    <state width="1558" height="274" key="GridCell.Tab.0.left" timestamp="1595522603297">
       <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593450669193" />
-    <state width="1558" height="303" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1595284953426" />
+    <state width="1558" height="303" key="GridCell.Tab.0.left/0.0.1600.836@0.0.1600.900" timestamp="1595518864557" />
+    <state width="1558" height="303" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1595522312234" />
     <state width="1558" height="245" key="GridCell.Tab.0.left/0.0.1600.900@0.23.1600.813" timestamp="1594735395749" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1594055507990" />
-    <state width="1558" height="303" key="GridCell.Tab.0.left/0.23.1600.813@0.23.1600.813" timestamp="1595285108590" />
-    <state width="1558" height="303" key="GridCell.Tab.0.right" timestamp="1595285108628">
+    <state width="1558" height="274" key="GridCell.Tab.0.left/0.23.1600.813@0.23.1600.813" timestamp="1595522603297" />
+    <state width="1558" height="274" key="GridCell.Tab.0.right" timestamp="1595522603312">
       <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593450669196" />
-    <state width="1558" height="303" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1595284953438" />
+    <state width="1558" height="303" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1595522312239" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1594055507994" />
-    <state width="1558" height="303" key="GridCell.Tab.0.right/0.23.1600.813@0.23.1600.813" timestamp="1595285108628" />
-    <state width="1558" height="303" key="GridCell.Tab.1.bottom" timestamp="1595285108639">
+    <state width="1558" height="274" key="GridCell.Tab.0.right/0.23.1600.813@0.23.1600.813" timestamp="1595522603312" />
+    <state width="1558" height="303" key="GridCell.Tab.1.bottom" timestamp="1595522512854">
       <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593450140632" />
-    <state width="1558" height="303" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1595284952493" />
+    <state width="1558" height="303" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1595522311326" />
     <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1594055508007" />
-    <state width="1558" height="303" key="GridCell.Tab.1.bottom/0.23.1600.813@0.23.1600.813" timestamp="1595285108639" />
-    <state width="1558" height="303" key="GridCell.Tab.1.center" timestamp="1595285108635">
+    <state width="1558" height="303" key="GridCell.Tab.1.bottom/0.23.1600.813@0.23.1600.813" timestamp="1595522512854" />
+    <state width="1558" height="303" key="GridCell.Tab.1.center" timestamp="1595522512843">
       <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593450140629" />
-    <state width="1558" height="303" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1595284952490" />
+    <state width="1558" height="303" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1595522311305" />
     <state width="1398" height="245" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1594055508004" />
-    <state width="1558" height="303" key="GridCell.Tab.1.center/0.23.1600.813@0.23.1600.813" timestamp="1595285108635" />
-    <state width="1558" height="303" key="GridCell.Tab.1.left" timestamp="1595285108634">
+    <state width="1558" height="303" key="GridCell.Tab.1.center/0.23.1600.813@0.23.1600.813" timestamp="1595522512843" />
+    <state width="1558" height="303" key="GridCell.Tab.1.left" timestamp="1595522512841">
       <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593450140627" />
-    <state width="1558" height="303" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1595284952488" />
+    <state width="1558" height="303" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1595522311301" />
     <state width="1398" height="245" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1594055508001" />
-    <state width="1558" height="303" key="GridCell.Tab.1.left/0.23.1600.813@0.23.1600.813" timestamp="1595285108634" />
-    <state width="1558" height="303" key="GridCell.Tab.1.right" timestamp="1595285108637">
+    <state width="1558" height="303" key="GridCell.Tab.1.left/0.23.1600.813@0.23.1600.813" timestamp="1595522512841" />
+    <state width="1558" height="303" key="GridCell.Tab.1.right" timestamp="1595522512847">
       <screen x="0" y="23" width="1600" height="813" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593450140630" />
-    <state width="1558" height="303" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1595284952492" />
+    <state width="1558" height="303" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1595522311308" />
     <state width="1398" height="245" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1594055508005" />
-    <state width="1558" height="303" key="GridCell.Tab.1.right/0.23.1600.813@0.23.1600.813" timestamp="1595285108637" />
+    <state width="1558" height="303" key="GridCell.Tab.1.right/0.23.1600.813@0.23.1600.813" timestamp="1595522512847" />
     <state width="1558" height="303" key="GridCell.Tab.2.bottom" timestamp="1595284952500">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -315,6 +297,10 @@
     </state>
     <state width="1558" height="303" key="GridCell.Tab.2.right/0.0.1600.900@0.0.1600.900" timestamp="1595284952497" />
     <state width="1558" height="303" key="GridCell.Tab.2.right/0.23.1600.813@0.23.1600.813" timestamp="1595074433954" />
+    <state x="338" y="112" key="Maven.ArtifactSearchDialog" timestamp="1595519037738">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="338" y="112" key="Maven.ArtifactSearchDialog/0.0.1600.900@0.0.1600.900" timestamp="1595519037738" />
     <state x="429" y="151" key="NewModule_or_Project.wizard" timestamp="1593439345065">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -336,10 +322,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="194" y="154" key="new project wizard/0.0.1600.900@0.0.1600.900" timestamp="1593425184714" />
-    <state x="562" y="63" key="refactoring.ChangeSignatureDialog" timestamp="1595271941024">
+    <state x="562" y="63" key="refactoring.ChangeSignatureDialog" timestamp="1595520438404">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="562" y="63" key="refactoring.ChangeSignatureDialog/0.0.1600.900@0.0.1600.900" timestamp="1595271941024" />
+    <state x="562" y="63" key="refactoring.ChangeSignatureDialog/0.0.1600.900@0.0.1600.900" timestamp="1595520438404" />
     <state x="428" y="196" width="745" height="676" key="search.everywhere.popup" timestamp="1594751596780">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -356,6 +342,14 @@
           <line>15</line>
           <properties field="kafkaTemplate" class="kc.domain.settings.Producer" />
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/domain/src/main/java/kc/domain/serializer/ProductSerializer.java</url>
+          <line>22</line>
+          <properties class="kc.domain.serializer.ProductSerializer" method="serialize">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

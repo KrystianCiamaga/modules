@@ -18,6 +18,8 @@ import java.util.List;
 @Document(indexName = "assets")
 public class Asset  {
 
+
+
     @Id
     private String id;
 

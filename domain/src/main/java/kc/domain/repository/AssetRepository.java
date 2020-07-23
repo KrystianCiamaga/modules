@@ -88,12 +88,17 @@ public class AssetRepository {
     public Optional<Asset> findById(String s) {
 
 
+
         SearchRequest searchRequest = new SearchRequest("assets");
 
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 
-        sourceBuilder.query(QueryBuilders.termQuery("id", s));
-                searchRequest.source(sourceBuilder);
+        sourceBuilder.query(QueryBuilders.matchQuery("id", s));
+
+        searchRequest.source(sourceBuilder);
+
+
+
         SearchResponse searchResponse = restclient.search(searchRequest,RequestOptions.DEFAULT);
 
         SearchHit[] hits = searchResponse.getHits().getHits();

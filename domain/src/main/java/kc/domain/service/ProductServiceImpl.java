@@ -6,6 +6,7 @@ import kc.domain.repository.ProductRepository;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -21,23 +22,22 @@ public class ProductServiceImpl implements ProductService {
         this.productRepository = productRepository;
     }
 
-   /* @Override
+ /*   @Override
     public List<Product> findAllProducts(int pageNumber, int pageSize) {
-       *//* return productRepository.findAll(PageRequest.of(pageNumber,pageSize)).stream()
-                .collect(Collectors.toList());*//*
+        return productRepository.findAll(PageRequest.of(pageNumber,pageSize)).stream()
+                .collect(Collectors.toList());
        return null;
-    }
+    }*/
 
     @Override
-    public Product findProductById(String id) {
+    public Product findProductById(String id) throws IOException {
 
-     *//*   Optional<Product> product = Optional.ofNullable(productRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Product not found")));
+        Optional<Product> product = Optional.ofNullable(productRepository.findById(id));
 
 
-        return product.get() ;}*//*
-     return null;
-    }*/
+        return product.get() ;
+
+    }
 
     @Override
     public void saveProduct(Product product) {
