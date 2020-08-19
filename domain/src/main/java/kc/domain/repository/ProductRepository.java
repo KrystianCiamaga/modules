@@ -8,6 +8,10 @@ import kc.domain.serializer.ProductSerializer;
 import kc.domain.service.AssetServiceImlp;
 import kc.domain.settings.JacksonConfiguration;
 import lombok.SneakyThrows;
+import org.apache.lucene.index.Term;
+import org.apache.lucene.search.BooleanClause;
+import org.apache.lucene.search.BooleanQuery;
+import org.apache.lucene.search.TermQuery;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
@@ -16,6 +20,7 @@ import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
@@ -25,6 +30,7 @@ import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Repository
@@ -83,17 +89,48 @@ public class ProductRepository {
 
             JsonNode node = jacksonConfiguration.objectMapper().readValue(jsonString, JsonNode.class);
 
+            ///////////
+
             List<String> assetsIDs = node.get("assets").findValuesAsText("assetId");
 
             List<Asset> assetList = new ArrayList<>();
 
 
-            for (String x : assetsIDs) {
+            SearchRequest searchRequest2 = new SearchRequest("assets");
+
+            SearchSourceBuilder sourceBuilder2 = new SearchSourceBuilder();
+
+
+            System.out.println(sourceBuilder2.query(QueryBuilders.termsQuery("id",assetsIDs)).toString());
+
+
+
+
+            searchRequest2.source(sourceBuilder2);
+
+            SearchResponse searchResponse = restHighLevelClient.search(searchRequest2,RequestOptions.DEFAULT);
+
+            SearchHit[] hits2 = searchResponse.getHits().getHits();
+
+            for (SearchHit hit2 : hits2) {
+                String jsonString2=hit2.getSourceAsString();
+                Asset tmpCl = jacksonConfiguration.objectMapper().reader().readValue(jsonString2,Asset.class);
+                assetList.add(tmpCl);
+                System.out.println(tmpCl.getCategory());
+            }
+
+
+
+     /*       for (String x : assetsIDs) {
                 Asset asset = assetServiceImlp.findAssetById(x);
 
                 assetList.add(asset);
 
-            }
+            }*/
+
+
+
+
 
             Product product = jacksonConfiguration.objectMapper().readValue(jsonString, Product.class);
             product.setAssets(assetList);

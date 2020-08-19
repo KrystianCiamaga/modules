@@ -2,6 +2,7 @@
 package kc.domain.repository;
 
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.MappingIterator;
 import kc.domain.entity.Asset;
 import kc.domain.settings.JacksonConfiguration;
@@ -56,7 +57,12 @@ public class AssetRepository {
 
         IndexRequest indexRequest = new IndexRequest("assets");
         indexRequest.id(s.getId());
-        indexRequest.source(jackson.objectMapper().writeValueAsString(s), XContentType.JSON);
+
+        String json = jackson.objectMapper().writeValueAsString(s);
+
+       // JsonNode node = JsonNode.Base;
+
+        System.out.println( indexRequest.source(jackson.objectMapper().writeValueAsString(s), XContentType.JSON));
         IndexResponse index = restclient.index(indexRequest, RequestOptions.DEFAULT);
 
         // TODO: 16/07/2020 change return
