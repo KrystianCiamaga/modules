@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f1ea522-eeae-4301-a613-e828de6c96b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/AssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/AssetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/AssetRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/AssetRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/ProductRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/serializer/ProductSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/serializer/ProductSerializer.class" afterDir="false" />
-    </list>
+    <list default="true" id="7f1ea522-eeae-4301-a613-e828de6c96b1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,16 +72,16 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/domain" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mocks/src/main/java/kc/mocks" />
       <recent name="$PROJECT_DIR$/domain/src/main/java/kc/domain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="kc.domain.settings" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/mocks/src/main/java/kc/mocks" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/domain" />
       <recent name="$PROJECT_DIR$/domain/src/main/java/kc/domain" />
     </key>
   </component>
