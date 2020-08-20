@@ -5,6 +5,7 @@
     <modules>
         <module>domain</module>
         <module>mocks</module>
+        <module>microservice</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
