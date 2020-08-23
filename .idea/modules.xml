@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Modules.iml" filepath="$PROJECT_DIR$/Modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/domain/domain.iml" filepath="$PROJECT_DIR$/domain/domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/microservice.iml" filepath="$PROJECT_DIR$/microservice/microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/mocks/mocks.iml" filepath="$PROJECT_DIR$/mocks/mocks.iml" />
     </modules>
   </component>
