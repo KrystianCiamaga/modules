@@ -1,0 +1,8 @@
+UserServiceImpl.class
+UserService.class
+User.class
+UserController.class
+SecurityConfiguration.class
+UserRepository.class
+UserDetailsService.class
+UserDetail.class
