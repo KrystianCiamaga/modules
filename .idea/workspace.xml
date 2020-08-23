@@ -208,11 +208,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.LocalPlatform" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.Tests" />
       <item itemvalue="JUnit.Tests.whenRequestForDeleteAssetThenTheAssetShouldBeDeleted" />
       <item itemvalue="JUnit.Tests.whenRequestForAllAssetsThenTheAllAssetsShouldBeReturned" />
       <item itemvalue="Spring Boot.SpringBootApplicationn" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
