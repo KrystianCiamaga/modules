@@ -75,6 +75,11 @@
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.3.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.2.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt-api:0.11.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.jsonwebtoken:jjwt-impl:0.11.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.jsonwebtoken:jjwt-jackson:0.11.1" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.0" level="project" />
     <orderEntry type="module" module-name="domain" />
     <orderEntry type="library" name="Maven: org.springframework.kafka:spring-kafka:2.5.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.7.RELEASE" level="project" />
@@ -138,8 +143,6 @@
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:reindex-client:7.6.2" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch-ssl-config:7.6.2" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:percolator-client:7.6.2" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.0" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch:7.6.2" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch-core:7.6.2" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch-secure-sm:7.6.2" level="project" />
