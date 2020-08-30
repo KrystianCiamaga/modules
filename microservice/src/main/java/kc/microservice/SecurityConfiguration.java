@@ -1,7 +1,8 @@
 package kc.microservice;
 
+import kc.microservice.Jwt2.JwtAuthorizationFilter;
+import kc.microservice.Jwt2.JwtUsernameAndPasswordAuthenticaionFilter;
 import kc.microservice.UserRepository;
-import kc.microservice.jwt.JwtAuthorizationFilter;
 import kc.microservice.jwt.UsernameAndPasswordAuthentication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -46,12 +47,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .addFilter(new UsernameAndPasswordAuthentication(authenticationManager()))
-                .addFilter(new JwtAuthorizationFilter(authenticationManager(),userRepository))
+                .addFilter(new JwtUsernameAndPasswordAuthenticaionFilter(authenticationManager()))
+                .addFilterAfter(new JwtAuthorizationFilter(authenticationManager()),JwtUsernameAndPasswordAuthenticaionFilter.class);
 
-
-                //.httpBasic()
-       .formLogin();
     }
 
     }

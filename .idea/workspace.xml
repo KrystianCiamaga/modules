@@ -80,7 +80,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservice/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservice/src/main/java/kc/microservice" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -107,7 +107,7 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/kc/domain" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Main">
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="microservice" />
       <extension name="coverage">
@@ -117,6 +117,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="kc.microservice.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootApplicationn" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="domain" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kc.domain.SpringBootApplicationn" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
