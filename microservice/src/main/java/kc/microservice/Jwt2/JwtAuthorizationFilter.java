@@ -1,10 +1,8 @@
 package kc.microservice.Jwt2;
 
 import io.jsonwebtoken.*;
-import kc.microservice.jwt.JwtProperties;
+import kc.microservice.User;
 import lombok.var;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.annotation.AccessType;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -18,20 +16,16 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.net.ContentHandler;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class JwtAuthorizationFilter extends OncePerRequestFilter {
-
-
 
 
     AuthenticationManager authenticationManager;
 
     public JwtAuthorizationFilter(AuthenticationManager authenticationManager) {
-        this.authenticationManager=authenticationManager;
+        this.authenticationManager = authenticationManager;
     }
 
     @Override
@@ -42,16 +36,15 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
         String authorizationHeader = request.getHeader(JwtProperties.HEADER);
 
 
-
-        if(authorizationHeader == null || !authorizationHeader.startsWith(JwtProperties.TOKEN_PREFIX)){
-            filterChain.doFilter(request,response);
+        if (authorizationHeader == null || !authorizationHeader.startsWith(JwtProperties.TOKEN_PREFIX)) {
+            filterChain.doFilter(request, response);
             return;
         }
 
 
-            String token = authorizationHeader.replace(JwtProperties.TOKEN_PREFIX,"");
+        String token = authorizationHeader.replace(JwtProperties.TOKEN_PREFIX, "");
 
-        try{
+        try {
 
 
             JwtParser build = Jwts.parserBuilder()
@@ -59,30 +52,30 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
                     .build();
             Jws<Claims> claimsJws = build.parseClaimsJws(token);
 
+
             Claims body = claimsJws.getBody();
 
             String username = body.getSubject();
 
-            SimpleGrantedAuthority simpleGrantedAuthority=new SimpleGrantedAuthority("ROLE_CLIENT");
-            List<GrantedAuthority> list = new ArrayList<>();
+            ////////////////////do zrozumienia
 
+            var uthorities = (List<Map<String, String>>) body.get("role");
 
-            list.add(simpleGrantedAuthority);
+            Set<SimpleGrantedAuthority> authorities = uthorities.stream()
+                    .map(m -> new SimpleGrantedAuthority(m.get("authority")))
+                    .collect(Collectors.toSet());
+
+            /////////////////////////
 
             Authentication authentication = new UsernamePasswordAuthenticationToken(
-                    username, null, list);
+                    username, null, authorities);
 
             SecurityContextHolder.getContext().setAuthentication(authentication);
 
-
-
-        }catch (JwtException e){
-            System.out.println(e.getMessage()+"dupa");
+        } catch (JwtException e) {
+            System.out.println(e.getMessage());
         }
 
-        filterChain.doFilter(request,response);
-
-
-
+        filterChain.doFilter(request, response);
     }
 }

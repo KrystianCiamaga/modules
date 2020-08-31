@@ -1,4 +1,4 @@
-package kc.microservice.jwt;
+package kc.microservice.Jwt2;
 
 import kc.microservice.Role;
 import kc.microservice.User;

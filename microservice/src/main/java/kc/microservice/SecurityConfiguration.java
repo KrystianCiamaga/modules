@@ -1,9 +1,8 @@
 package kc.microservice;
 
 import kc.microservice.Jwt2.JwtAuthorizationFilter;
-import kc.microservice.Jwt2.JwtUsernameAndPasswordAuthenticaionFilter;
+import kc.microservice.Jwt2.JwtUsernameAndPasswordAuthenticationFilter;
 import kc.microservice.UserRepository;
-import kc.microservice.jwt.UsernameAndPasswordAuthentication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -21,12 +20,11 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     private UserDetailsService userDetailsService;
-    private UserRepository userRepository;
 
-    public SecurityConfiguration( UserDetailsService userDetailsService,UserRepository userRepository) {
+    public SecurityConfiguration( UserDetailsService userDetailsService) {
 
         this.userDetailsService = userDetailsService;
-        this.userRepository=userRepository;
+
     }
 
     @Bean
@@ -43,12 +41,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .addFilter(new JwtUsernameAndPasswordAuthenticaionFilter(authenticationManager()))
-                .addFilterAfter(new JwtAuthorizationFilter(authenticationManager()),JwtUsernameAndPasswordAuthenticaionFilter.class);
+                .addFilter(new JwtUsernameAndPasswordAuthenticationFilter(authenticationManager()))
+                .addFilterAfter(new JwtAuthorizationFilter(authenticationManager()),JwtUsernameAndPasswordAuthenticationFilter.class);
 
     }
 
