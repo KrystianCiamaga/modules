@@ -83,6 +83,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.0" level="project" />
     <orderEntry type="module" module-name="domain" />
+    <orderEntry type="module" module-name="authenticationservice" />
     <orderEntry type="library" name="Maven: org.springframework.kafka:spring-kafka:2.5.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.2.7.RELEASE" level="project" />

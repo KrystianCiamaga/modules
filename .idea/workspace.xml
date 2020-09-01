@@ -2,23 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f1ea522-eeae-4301-a613-e828de6c96b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authenticationservice/authenticationservice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authenticationservice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/PasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/JwtAuthenticatedUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/JwtAuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/JwtUsernameAndPasswordAuthenticaionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/JwtUsernameAndPasswordAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/domain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/SpringBootApplicationn.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/SpringBootApplicationn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/AssetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/AssetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/SpringBootApplicationn.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/SpringBootApplicationn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/AssetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/AssetController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/microservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/microservice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/JwtAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/JwtProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/JwtProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/JwtUsernameAndPasswordAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/JwtUsernameAndPasswordAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/LoginViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/LoginViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/jwt/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/jwt/JwtAuthorizationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/jwt/JwtProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Jwt2/JwtProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/jwt/JwtViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/jwt/UsernameAndPasswordAuthentication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Jwt2/JwtAuthorizationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Jwt2/JwtAuthorizationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Jwt2/JwtUsernameAndPasswordAuthenticaionFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Jwt2/JwtUsernameAndPasswordAuthenticaionFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Jwt2/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Jwt2/JwtAuthorizationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Jwt2/JwtProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Jwt2/JwtUsernameAndPasswordAuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Jwt2/LoginViewModel.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/SecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/jwt/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/jwt/JwtProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/jwt/JwtViewModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/jwt/UsernameAndPasswordAuthentication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mocks/mocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/mocks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +89,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -83,29 +100,30 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/microservice/src/main/java/kc/microservice" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/microservice/src/main/java/kc/microservice" />
-      <recent name="$PROJECT_DIR$/microservice/src/main/java" />
-      <recent name="$PROJECT_DIR$/mocks/src/main/java/kc/mocks" />
-      <recent name="$PROJECT_DIR$/domain/src/main/java/kc/domain" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="kc.domain.settings" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/microservice/src/main/java/nowy" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/domain" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kc.domain.settings" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/microservice/src/main/java/kc/microservice" />
+      <recent name="$PROJECT_DIR$/authenticationservice/src/main/java" />
+      <recent name="$PROJECT_DIR$/microservice/src/main/java" />
+      <recent name="$PROJECT_DIR$/mocks/src/main/java/kc/mocks" />
+      <recent name="$PROJECT_DIR$/domain/src/main/java/kc/domain" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main">
+  <component name="RunManager" selected="Spring Boot.SpringBootApplicationn">
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="microservice" />
       <extension name="coverage">
@@ -143,97 +161,122 @@
       <option name="presentableId" value="Default" />
       <updated>1598822892762</updated>
       <workItem from="1598822895478" duration="4736000" />
+      <workItem from="1598888269107" duration="8512000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="400" y="115" key="#Project_Structure" timestamp="1598971767282">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="400" y="115" key="#Project_Structure/0.0.1600.900@0.0.1600.900" timestamp="1598971767282" />
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598184152154">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1598184152154" />
-    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1598365453772">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="592" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1598969533877">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1598365453772" />
-    <state width="1558" height="274" key="GridCell.Tab.0.bottom" timestamp="1598871163624">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state x="592" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1598969533877" />
+    <state x="348" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1598969251181">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="348" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.900@0.0.1600.900" timestamp="1598969251181" />
+    <state x="551" y="337" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1598966469392">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="551" y="337" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1600.900@0.0.1600.900" timestamp="1598966469392" />
+    <state width="1558" height="274" key="GridCell.Tab.0.bottom" timestamp="1598975360233">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598870500570" />
-    <state width="1558" height="274" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1598825904522" />
+    <state width="1558" height="274" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1598975360233" />
     <state width="1398" height="274" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1598870503052" />
-    <state width="1558" height="274" key="GridCell.Tab.0.bottom/0.23.1600.826@0.23.1600.826" timestamp="1598871163624" />
-    <state width="1558" height="274" key="GridCell.Tab.0.center" timestamp="1598871163620">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.0.bottom/0.23.1600.826@0.23.1600.826" timestamp="1598975306757" />
+    <state width="1558" height="274" key="GridCell.Tab.0.center" timestamp="1598975360227">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598870500566" />
-    <state width="1558" height="274" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1598825904518" />
+    <state width="1558" height="274" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1598975360227" />
     <state width="1398" height="274" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1598870503044" />
-    <state width="1558" height="274" key="GridCell.Tab.0.center/0.23.1600.826@0.23.1600.826" timestamp="1598871163620" />
-    <state width="1558" height="274" key="GridCell.Tab.0.left" timestamp="1598871163617">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.0.center/0.23.1600.826@0.23.1600.826" timestamp="1598975306754" />
+    <state width="1558" height="274" key="GridCell.Tab.0.left" timestamp="1598975360224">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598870500557" />
-    <state width="1558" height="274" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1598825904516" />
+    <state width="1558" height="274" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1598975360224" />
     <state width="1398" height="274" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1598870503042" />
-    <state width="1558" height="274" key="GridCell.Tab.0.left/0.23.1600.826@0.23.1600.826" timestamp="1598871163617" />
-    <state width="1558" height="274" key="GridCell.Tab.0.right" timestamp="1598871163622">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.0.left/0.23.1600.826@0.23.1600.826" timestamp="1598975306753" />
+    <state width="1558" height="274" key="GridCell.Tab.0.right" timestamp="1598975360228">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598870500568" />
-    <state width="1558" height="274" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1598825904520" />
+    <state width="1558" height="274" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1598975360228" />
     <state width="1398" height="274" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1598870503050" />
-    <state width="1558" height="274" key="GridCell.Tab.0.right/0.23.1600.826@0.23.1600.826" timestamp="1598871163622" />
-    <state width="1558" height="274" key="GridCell.Tab.1.bottom" timestamp="1598871163633">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.0.right/0.23.1600.826@0.23.1600.826" timestamp="1598975306756" />
+    <state width="1558" height="274" key="GridCell.Tab.1.bottom" timestamp="1598975360242">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598870500605" />
-    <state width="1558" height="274" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1598825904528" />
+    <state width="1558" height="274" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1598975360242" />
     <state width="1398" height="274" key="GridCell.Tab.1.bottom/0.23.1440.826@0.23.1440.826" timestamp="1598870503058" />
-    <state width="1558" height="274" key="GridCell.Tab.1.bottom/0.23.1600.826@0.23.1600.826" timestamp="1598871163633" />
-    <state width="1558" height="274" key="GridCell.Tab.1.center" timestamp="1598871163629">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.1.bottom/0.23.1600.826@0.23.1600.826" timestamp="1598975306774" />
+    <state width="1558" height="274" key="GridCell.Tab.1.center" timestamp="1598975360237">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1598870500592" />
-    <state width="1558" height="274" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1598825904525" />
+    <state width="1558" height="274" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1598975360237" />
     <state width="1398" height="274" key="GridCell.Tab.1.center/0.23.1440.826@0.23.1440.826" timestamp="1598870503055" />
-    <state width="1558" height="274" key="GridCell.Tab.1.center/0.23.1600.826@0.23.1600.826" timestamp="1598871163629" />
-    <state width="1558" height="274" key="GridCell.Tab.1.left" timestamp="1598871163626">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.1.center/0.23.1600.826@0.23.1600.826" timestamp="1598975306763" />
+    <state width="1558" height="274" key="GridCell.Tab.1.left" timestamp="1598975360235">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1598870500572" />
-    <state width="1558" height="274" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1598825904523" />
+    <state width="1558" height="274" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1598975360235" />
     <state width="1398" height="274" key="GridCell.Tab.1.left/0.23.1440.826@0.23.1440.826" timestamp="1598870503053" />
-    <state width="1558" height="274" key="GridCell.Tab.1.left/0.23.1600.826@0.23.1600.826" timestamp="1598871163626" />
-    <state width="1558" height="274" key="GridCell.Tab.1.right" timestamp="1598871163631">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.1.left/0.23.1600.826@0.23.1600.826" timestamp="1598975306758" />
+    <state width="1558" height="274" key="GridCell.Tab.1.right" timestamp="1598975360240">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1598870500603" />
-    <state width="1558" height="274" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1598825904526" />
+    <state width="1558" height="274" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1598975360240" />
     <state width="1398" height="274" key="GridCell.Tab.1.right/0.23.1440.826@0.23.1440.826" timestamp="1598870503057" />
-    <state width="1558" height="274" key="GridCell.Tab.1.right/0.23.1600.826@0.23.1600.826" timestamp="1598871163631" />
-    <state width="1398" height="303" key="GridCell.Tab.2.bottom" timestamp="1598367123639">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1558" height="274" key="GridCell.Tab.1.right/0.23.1600.826@0.23.1600.826" timestamp="1598975306766" />
+    <state width="1558" height="303" key="GridCell.Tab.2.bottom" timestamp="1598967841916">
+      <screen x="0" y="23" width="1600" height="826" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598367123639" />
     <state width="1398" height="303" key="GridCell.Tab.2.bottom/0.23.1440.826@0.23.1440.826" timestamp="1598366843228" />
-    <state width="1398" height="303" key="GridCell.Tab.2.center" timestamp="1598367123635">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1558" height="303" key="GridCell.Tab.2.bottom/0.23.1600.826@0.23.1600.826" timestamp="1598967841916" />
+    <state width="1558" height="303" key="GridCell.Tab.2.center" timestamp="1598967841914">
+      <screen x="0" y="23" width="1600" height="826" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1598367123635" />
     <state width="1398" height="303" key="GridCell.Tab.2.center/0.23.1440.826@0.23.1440.826" timestamp="1598366843221" />
-    <state width="1398" height="303" key="GridCell.Tab.2.left" timestamp="1598367123631">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1558" height="303" key="GridCell.Tab.2.center/0.23.1600.826@0.23.1600.826" timestamp="1598967841914" />
+    <state width="1558" height="303" key="GridCell.Tab.2.left" timestamp="1598967841912">
+      <screen x="0" y="23" width="1600" height="826" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1598367123631" />
     <state width="1398" height="303" key="GridCell.Tab.2.left/0.23.1440.826@0.23.1440.826" timestamp="1598366843219" />
-    <state width="1398" height="303" key="GridCell.Tab.2.right" timestamp="1598367123637">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1558" height="303" key="GridCell.Tab.2.left/0.23.1600.826@0.23.1600.826" timestamp="1598967841912" />
+    <state width="1558" height="303" key="GridCell.Tab.2.right" timestamp="1598967841915">
+      <screen x="0" y="23" width="1600" height="826" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1598367123637" />
     <state width="1398" height="303" key="GridCell.Tab.2.right/0.23.1440.826@0.23.1440.826" timestamp="1598366843223" />
+    <state width="1558" height="303" key="GridCell.Tab.2.right/0.23.1600.826@0.23.1600.826" timestamp="1598967841915" />
+    <state x="194" y="147" key="new project wizard" timestamp="1598889176766">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="194" y="147" key="new project wizard/0.0.1600.900@0.0.1600.900" timestamp="1598889176766" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

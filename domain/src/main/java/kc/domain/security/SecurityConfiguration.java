@@ -1,10 +1,8 @@
-package kc.microservice;
-
+package kc.domain.security;
 
 import Jwt2.JwtAuthorizationFilter;
 import Jwt2.JwtUsernameAndPasswordAuthenticationFilter;
-import Jwt2.PasswordEncoder;
-import kc.microservice.UserRepository;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -16,38 +14,19 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 @Configuration
 @EnableGlobalMethodSecurity(securedEnabled = true)
+@NoArgsConstructor
 @ComponentScan(basePackages = "Jwt2")
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
-
-    private UserDetailsService userDetailsService;
-
-    public SecurityConfiguration(UserDetailsService userDetailsService) {
-
-        this.userDetailsService = userDetailsService;
-
-    }
-
-    @Autowired
-    BCryptPasswordEncoder passwordEncoder;
-
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-
-        auth.userDetailsService(userDetailsService)
-                .passwordEncoder(passwordEncoder);
-    }
-
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
         http
-                .csrf().disable()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()

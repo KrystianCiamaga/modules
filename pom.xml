@@ -6,6 +6,7 @@
         <module>domain</module>
         <module>mocks</module>
         <module>microservice</module>
+        <module>authenticationservice</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

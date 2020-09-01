@@ -3,6 +3,7 @@ package kc.domain.controller;
 
 import kc.domain.entity.Asset;
 import kc.domain.service.AssetServiceImlp;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
@@ -21,9 +22,16 @@ public class AssetController {
 
 
     @GetMapping()
+    @Secured("ROLE_CLIENT")
     public List<Asset> getAllAssets() {
         System.out.println("WSZEDLEM TUTAJ");
         return assetServiceImlp.findAllAssets();
+    }
+
+    @GetMapping("/test")
+    @Secured("ROLE_CLIENT")
+    public String testowy(){
+        return "testowy endpoint asset";
     }
 
     @GetMapping("{id}")

@@ -2,16 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="domain" />
         <module name="microservice" />
+        <module name="authenticationservice" />
         <module name="mocks" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="authenticationservice" target="1.8" />
       <module name="domain" target="1.8" />
       <module name="microservice" target="1.8" />
       <module name="mocks" target="11" />
@@ -21,6 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Modules" options="-parameters" />
+      <module name="authenticationservice" options="-parameters" />
       <module name="domain" options="-parameters" />
       <module name="microservice" options="-parameters" />
       <module name="mocks" options="-parameters" />

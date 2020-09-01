@@ -1,4 +1,4 @@
-package kc.microservice.Jwt2;
+package Jwt2;
 
 public class JwtProperties {
 

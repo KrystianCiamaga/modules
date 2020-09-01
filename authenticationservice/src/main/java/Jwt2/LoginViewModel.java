@@ -1,6 +1,5 @@
-package kc.microservice.Jwt2;
+package Jwt2;
 
-import lombok.AllArgsConstructor;
 import lombok.Setter;
 
 @Setter
