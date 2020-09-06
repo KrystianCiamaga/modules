@@ -1,122 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f1ea522-eeae-4301-a613-e828de6c96b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/JwtAuthenticatedUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/user/UserPermissions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersmicroservice/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersmicroservice/target/classes/kc/microservice/Demo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersmicroservice/target/classes/kc/microservice/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersmicroservice/target/classes/kc/microservice/SecurityConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersmicroservice/target/classes/kc/microservice/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersmicroservice/target/classes/kc/microservice/UserDetailsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersmicroservice/target/classes/kc/microservice/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersmicroservice/target/classes/kc/microservice/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersmicroservice/target/classes/kc/microservice/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authenticationservice/authenticationservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/authenticationservice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authenticationservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/JwtAuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/JwtUsernameAndPasswordAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/JwtUsernameAndPasswordAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/LoginViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/Jwt2/LoginViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authenticationservice/target/classes/Jwt2/JwtAuthorizationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/target/classes/Jwt2/JwtAuthorizationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authenticationservice/target/classes/Jwt2/JwtUsernameAndPasswordAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/target/classes/Jwt2/JwtUsernameAndPasswordAuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/transactionsmicroservice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/CommandRunner/CommandRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/CommandRunner/CommandRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/SpringBootApplicationn.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/SpringBootApplicationn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/AssetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/controller/AssetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/KafkaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/controller/KafkaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/Testowy.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/controller/Testowy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/controller/TradeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/controller/TradeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/AbstractContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/entity/AbstractContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/entity/Asset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/entity/Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/entity/Trade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/enums/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/enums/Environment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/AssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/repository/AssetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/repository/TradeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/repository/TradeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/serializer/ProductSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/serializer/ProductSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/AssetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/service/AssetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/AssetServiceImlp.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/service/AssetServiceImlp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/TradeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/service/TradeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/service/TradeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/service/TradeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/BaseSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/settings/BaseSetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/BaseSettingsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/settings/BaseSettingsConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/settings/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/JacksonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/settings/JacksonConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/settings/KafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/settings/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/kc/domain/settings/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/java/kc/domain/settings/RestClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/META-INF/domain.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/CommandRunner/CommandRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/target/classes/kc/domain/CommandRunner/CommandRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/SpringBootApplicationn.class" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/target/classes/kc/domain/SpringBootApplicationn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/AssetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/transactionsmicroservice/target/classes/kc/domain/controller/AssetController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/KafkaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/controller/Testowy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/entity/Asset.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/entity/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/entity/Trade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/enums/Environment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/AssetRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/repository/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/security/SecurityConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/serializer/ProductSerializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/AssetService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/AssetServiceImlp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/service/ProductServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/BaseSetting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/BaseSettingsConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/JacksonConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/KafkaConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/kc/domain/settings/RestClientConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/microservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/usersmicroservice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/src/main/java/kc/microservice/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/src/main/java/kc/microservice/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/user/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/src/main/java/kc/microservice/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/src/main/java/kc/microservice/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/UserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/user/UserDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/UserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/src/main/java/kc/microservice/UserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/src/main/java/kc/microservice/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/src/main/java/kc/microservice/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/kc/microservice/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/src/main/java/kc/microservice/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/META-INF/microservice.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/usersmicroservice/target/classes/META-INF/microservice.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/SecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/target/classes/kc/microservice/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/mocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/mocks.iml" afterDir="false" />
-    </list>
+    <list default="true" id="7f1ea522-eeae-4301-a613-e828de6c96b1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,7 +192,7 @@
       <workItem from="1599038802362" duration="409000" />
       <workItem from="1599039363863" duration="9121000" />
       <workItem from="1599066875241" duration="349000" />
-      <workItem from="1599128309903" duration="11670000" />
+      <workItem from="1599128309903" duration="11925000" />
     </task>
     <servers />
   </component>
@@ -343,60 +228,60 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="538" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1599040320628" />
-    <state width="1558" height="274" key="GridCell.Tab.0.bottom" timestamp="1599410428763">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.0.bottom" timestamp="1599410452918">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599379495249" />
-    <state width="1558" height="274" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1599404683916" />
+    <state width="1558" height="274" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1599410452918" />
     <state width="1398" height="274" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1599067061814" />
     <state width="1558" height="274" key="GridCell.Tab.0.bottom/0.23.1600.826@0.23.1600.826" timestamp="1599410428763" />
-    <state width="1558" height="274" key="GridCell.Tab.0.center" timestamp="1599410428748">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.0.center" timestamp="1599410452914">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1599379495245" />
-    <state width="1558" height="274" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1599404683914" />
+    <state width="1558" height="274" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1599410452914" />
     <state width="1398" height="274" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1599067061809" />
     <state width="1558" height="274" key="GridCell.Tab.0.center/0.23.1600.826@0.23.1600.826" timestamp="1599410428748" />
-    <state width="1558" height="274" key="GridCell.Tab.0.left" timestamp="1599410428744">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.0.left" timestamp="1599410452907">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1599379495242" />
-    <state width="1558" height="274" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1599404683912" />
+    <state width="1558" height="274" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1599410452907" />
     <state width="1398" height="274" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1599067061806" />
     <state width="1558" height="274" key="GridCell.Tab.0.left/0.23.1600.826@0.23.1600.826" timestamp="1599410428744" />
-    <state width="1558" height="274" key="GridCell.Tab.0.right" timestamp="1599410428760">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.0.right" timestamp="1599410452917">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1599379495247" />
-    <state width="1558" height="274" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1599404683915" />
+    <state width="1558" height="274" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1599410452917" />
     <state width="1398" height="274" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1599067061811" />
     <state width="1558" height="274" key="GridCell.Tab.0.right/0.23.1600.826@0.23.1600.826" timestamp="1599410428760" />
-    <state width="1558" height="274" key="GridCell.Tab.1.bottom" timestamp="1599410428775">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.1.bottom" timestamp="1599410452923">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599379495257" />
-    <state width="1558" height="274" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1599404683921" />
+    <state width="1558" height="274" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1599410452923" />
     <state width="1398" height="274" key="GridCell.Tab.1.bottom/0.23.1440.826@0.23.1440.826" timestamp="1599067061823" />
     <state width="1558" height="274" key="GridCell.Tab.1.bottom/0.23.1600.826@0.23.1600.826" timestamp="1599410428775" />
-    <state width="1558" height="274" key="GridCell.Tab.1.center" timestamp="1599410428767">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.1.center" timestamp="1599410452921">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1599379495254" />
-    <state width="1558" height="274" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1599404683919" />
+    <state width="1558" height="274" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1599410452921" />
     <state width="1398" height="274" key="GridCell.Tab.1.center/0.23.1440.826@0.23.1440.826" timestamp="1599067061818" />
     <state width="1558" height="274" key="GridCell.Tab.1.center/0.23.1600.826@0.23.1600.826" timestamp="1599410428767" />
-    <state width="1558" height="274" key="GridCell.Tab.1.left" timestamp="1599410428765">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.1.left" timestamp="1599410452919">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1599379495251" />
-    <state width="1558" height="274" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1599404683918" />
+    <state width="1558" height="274" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1599410452919" />
     <state width="1398" height="274" key="GridCell.Tab.1.left/0.23.1440.826@0.23.1440.826" timestamp="1599067061816" />
     <state width="1558" height="274" key="GridCell.Tab.1.left/0.23.1600.826@0.23.1600.826" timestamp="1599410428765" />
-    <state width="1558" height="274" key="GridCell.Tab.1.right" timestamp="1599410428773">
-      <screen x="0" y="23" width="1600" height="826" />
+    <state width="1558" height="274" key="GridCell.Tab.1.right" timestamp="1599410452922">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1398" height="274" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1599379495255" />
-    <state width="1558" height="274" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1599404683920" />
+    <state width="1558" height="274" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1599410452922" />
     <state width="1398" height="274" key="GridCell.Tab.1.right/0.23.1440.826@0.23.1440.826" timestamp="1599067061820" />
     <state width="1558" height="274" key="GridCell.Tab.1.right/0.23.1600.826@0.23.1600.826" timestamp="1599410428773" />
     <state width="1558" height="303" key="GridCell.Tab.2.bottom" timestamp="1599394191608">
