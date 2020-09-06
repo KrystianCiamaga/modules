@@ -8,7 +8,9 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import user.UserDetail;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -48,16 +50,18 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
     protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response,
                                             FilterChain chain, Authentication authResult) throws IOException, ServletException {
 
+        UserDetail userDetail = (UserDetail) authResult.getPrincipal();
 
         String token = Jwts.builder()
-                .setSubject(authResult.getName())
-                .claim("role",authResult.getAuthorities())
+                .setSubject(userDetail.getUsername())
+                .claim("role",userDetail.getAuthorities())
+                .claim("id",userDetail.getId())
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis()+ JwtProperties.EXPIRATION_DATE))
                 .signWith(Keys.hmacShaKeyFor(JwtProperties.SECRET_KEY.getBytes()))
                 .compact();
 
-        response.addHeader("Authorization",JwtProperties.TOKEN_PREFIX+token);
+        response.addHeader(JwtProperties.HEADER,JwtProperties.TOKEN_PREFIX+token);
 
     }
 }

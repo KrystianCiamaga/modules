@@ -7,27 +7,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="domain" />
-        <module name="microservice" />
+        <module name="transactionsmicroservice" />
+        <module name="usersmicroservice" />
         <module name="authenticationservice" />
         <module name="mocks" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="authenticationservice" target="1.8" />
-      <module name="domain" target="1.8" />
-      <module name="microservice" target="1.8" />
       <module name="mocks" target="11" />
       <module name="Modules" target="1.8" />
+      <module name="transactionsmicroservice" target="1.8" />
+      <module name="usersmicroservice" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Modules" options="-parameters" />
       <module name="authenticationservice" options="-parameters" />
-      <module name="domain" options="-parameters" />
-      <module name="microservice" options="-parameters" />
       <module name="mocks" options="-parameters" />
+      <module name="transactionsmicroservice" options="-parameters" />
+      <module name="usersmicroservice" options="-parameters" />
     </option>
   </component>
 </project>

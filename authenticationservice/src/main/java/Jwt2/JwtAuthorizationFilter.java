@@ -1,13 +1,16 @@
 package Jwt2;
 
 import io.jsonwebtoken.*;
+import lombok.Getter;
 import lombok.var;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
+import user.User;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -19,10 +22,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@Getter
 public class JwtAuthorizationFilter extends OncePerRequestFilter {
 
 
-    AuthenticationManager authenticationManager;
+   private AuthenticationManager authenticationManager;
 
     public JwtAuthorizationFilter(AuthenticationManager authenticationManager) {
         this.authenticationManager = authenticationManager;
@@ -56,26 +60,30 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
             Claims body = claimsJws.getBody();
 
             String username = body.getSubject();
+            Long id = Long.valueOf(body.get("id").toString());
 
-            ////////////////////do zrozumienia
 
             var uthorities = (List<Map<String, String>>) body.get("role");
 
-            Set<SimpleGrantedAuthority> authorities = uthorities.stream()
+            List<GrantedAuthority> authorities = uthorities.stream()
                     .map(m -> new SimpleGrantedAuthority(m.get("authority")))
-                    .collect(Collectors.toSet());
+                    .collect(Collectors.toList());
 
-            /////////////////////////
 
-            Authentication authentication = new UsernamePasswordAuthenticationToken(
-                    username, null, authorities);
+            User user = new User();
+            user.setLogin(username);
+            user.setId(id);
+
+            Authentication authentication = new JwtAuthenticatedUser(user, authorities);
 
             SecurityContextHolder.getContext().setAuthentication(authentication);
+
+            filterChain.doFilter(request, response);
 
         } catch (JwtException e) {
             System.out.println(e.getMessage());
         }
 
-        filterChain.doFilter(request, response);
+
     }
 }
