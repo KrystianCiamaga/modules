@@ -3,7 +3,11 @@ package kc.domain.controller;
 
 import Jwt2.JwtAuthenticatedUser;
 import kc.domain.entity.Asset;
+import kc.domain.entity.Product;
 import kc.domain.service.AssetServiceImlp;
+import kc.domain.settings.Consumer;
+import kc.domain.settings.Producer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -22,6 +26,12 @@ public class AssetController {
 
     private final AssetServiceImlp assetServiceImlp;
 
+    @Autowired
+    Producer producer;
+
+    @Autowired
+    Consumer consumer;
+
 
     public AssetController(AssetServiceImlp assetServiceImlp) {
         this.assetServiceImlp = assetServiceImlp;
@@ -37,6 +47,10 @@ public class AssetController {
     @GetMapping("/test")
     @PreAuthorize("hasAuthority('write:read')")
         public String testowy(){
+
+        producer.sendMessage("TESTOWA WIADOMOSC");
+
+
 
         return "testowy endpoint asset";
     }

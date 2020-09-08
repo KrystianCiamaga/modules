@@ -28,10 +28,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http
-                .authorizeRequests().and()
+        http.csrf().disable()
+                /*.authorizeRequests().and()
                 .authorizeRequests().antMatchers("assets/test").hasAuthority(UserPermissions.WRITE_READ.getPermission())
-        .and()
+        .and()*/
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
