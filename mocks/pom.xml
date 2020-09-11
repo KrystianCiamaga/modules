@@ -30,18 +30,32 @@
 
 
         <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+        <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
-            <version>3.6.1</version>
+            <version>3.6.2</version>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper-client -->
+        <!-- https://mvnrepository.com/artifact/com.saaavsaaa/zookeeper-client -->
+       <!-- <dependency>
+            <groupId>com.saaavsaaa</groupId>
+            <artifactId>zookeeper-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+-->
 
         <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka -->
         <dependency>
             <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka_2.10</artifactId>
-            <version>0.8.1</version>
+            <artifactId>kafka_2.13</artifactId>
+            <version>2.6.0</version>
         </dependency>
+
+
+
         <!-- https://mvnrepository.com/artifact/log4j/log4j -->
         <dependency>
             <groupId>log4j</groupId>
@@ -64,6 +78,8 @@
             <version>5.1.0</version>
             <scope>test</scope>
         </dependency>
+
+
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-client</artifactId>

@@ -12,15 +12,36 @@
     <artifactId>domain</artifactId>
     <packaging>jar</packaging>
     <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+
+
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka-dist -->
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
+            <version>2.6.0</version>
         </dependency>
+
+
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
             <version>2.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>kc</groupId>
+            <artifactId>authenticationservice</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>kc</groupId>

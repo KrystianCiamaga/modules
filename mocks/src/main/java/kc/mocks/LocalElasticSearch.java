@@ -27,7 +27,7 @@ public class LocalElasticSearch {
               /*  .put("discovery.type","single-node")
                 .put("http.host","localhost")
                 .put("path.data","/tmp/elasticsearch/data")*/
-                .put(Environment.PATH_HOME_SETTING.getKey(), "/tmp/elasticsearch").build();
+                .put(Environment.PATH_HOME_SETTING.getKey(), "/tmp").build();
 
 
         Node node = new PluginConfigurableNode(settings, Collections.singletonList(Netty4Plugin.class));

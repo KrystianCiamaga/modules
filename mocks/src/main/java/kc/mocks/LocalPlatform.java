@@ -31,9 +31,16 @@ public class LocalPlatform implements BeforeEachCallback{
 
     public static void main(String[] args) throws Exception {
 
-        LocalDatabases.start();
+        //LocalDatabases.start();
 
-        LocalKafka.KafkaLocal(LocalKafkaProperties.getLocalKafkaProperties());
+        LocalZookeeper localZookeeper=new LocalZookeeper(2181);
+
+       localZookeeper.startup();
+
+
+
+       LocalKafka localKafka=new LocalKafka(2181,9092);
+       localKafka.startup();
 
         CommandRunner.environment= Environment.LOCAL;
 

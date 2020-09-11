@@ -1,7 +1,7 @@
 package kc.domain.controller;
 
 
-import Jwt2.JwtAuthenticatedUser;
+
 import kc.domain.entity.Asset;
 import kc.domain.entity.Product;
 import kc.domain.service.AssetServiceImlp;
@@ -13,7 +13,6 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
-import user.UserDetail;
 
 import java.io.IOException;
 import java.security.Principal;
