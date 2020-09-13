@@ -25,7 +25,13 @@
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+hs_err_pid*gti
 
 # End of https://www.toptal.com/developers/g
 /domain/
+
+mv .idea ../.idea_backup
+rm .idea # in case you forgot to close your IDE
+git rm -r .idea
+git commit -m "Remove .idea from repo"
+mv ../.idea_backup .idea
