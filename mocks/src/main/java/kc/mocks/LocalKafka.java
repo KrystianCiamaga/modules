@@ -27,6 +27,8 @@ public class LocalKafka{
 
 
 
+
+
     public LocalKafka(int zkPort, int brokerPort){
 
         log.info("Zookeeper port{} ",zkPort);
@@ -44,7 +46,7 @@ public class LocalKafka{
             stateDir = Files.createTempDir();
 
             kafkaBrokerConfig.setProperty("zookeeper.connect",zookeeper);
-            kafkaBrokerConfig.setProperty("broker.id", "2");
+            kafkaBrokerConfig.setProperty("broker.id", "0");
             kafkaBrokerConfig.setProperty("host.name","localhost");
             kafkaBrokerConfig.setProperty("advertised.host.name","localhost");
             kafkaBrokerConfig.setProperty("port",Integer.toString(port));

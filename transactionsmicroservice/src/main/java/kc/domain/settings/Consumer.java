@@ -1,3 +1,4 @@
+/*
 package kc.domain.settings;
 
 import org.slf4j.Logger;
@@ -15,3 +16,4 @@ public class Consumer {
         logger.info(String.format("$$ -> Consumed Message -> %s",message));
     }
 }
+*/

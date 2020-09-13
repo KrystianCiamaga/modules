@@ -5,7 +5,6 @@ package kc.domain.controller;
 import kc.domain.entity.Asset;
 import kc.domain.entity.Product;
 import kc.domain.service.AssetServiceImlp;
-import kc.domain.settings.Consumer;
 import kc.domain.settings.Producer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
@@ -28,8 +27,10 @@ public class AssetController {
     @Autowired
     Producer producer;
 
+/*
     @Autowired
     Consumer consumer;
+*/
 
 
     public AssetController(AssetServiceImlp assetServiceImlp) {

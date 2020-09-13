@@ -43,10 +43,8 @@
     <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.50.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport-native-epoll:4.1.50.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport-native-unix-common:4.1.50.Final" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka_2.13:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:2.5.0" level="project" />
-    <orderEntry type="library" name="Maven: com.github.luben:zstd-jni:1.4.4-7" level="project" />
-    <orderEntry type="library" name="Maven: org.lz4:lz4-java:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-scala_2.13:2.11.0" level="project" />
@@ -62,10 +60,14 @@
     <orderEntry type="library" name="Maven: org.scala-lang:scala-reflect:2.13.2" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.scala-logging:scala-logging_2.13:3.9.2" level="project" />
     <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.4" level="project" />
-    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.github.luben:zstd-jni:1.4.4-7" level="project" />
+    <orderEntry type="library" name="Maven: org.lz4:lz4-java:1.7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.1.7.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.13.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.curator:curator-test:5.1.0" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-core:4.1.9" level="project" />
-    <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.1.7" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:27.0.1-jre" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:failureaccess:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
@@ -166,8 +168,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.2.7.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.2.7.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.7.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.11.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.13.3" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.30" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-configuration-processor:2.3.1.RELEASE" level="project" />
