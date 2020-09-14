@@ -1,19 +1,21 @@
 package kc.domain;
 
 
+import kc.domain.settings.ProductsFileReader;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 
 
 @SpringBootApplication
 public class SpringBootApplicationn {
 
 
+
+
     public static void main(String[] args) {
 
+        //prod.readFromFile("/Users/macosmojave/Desktop/products_prices.txt");
 
         SpringApplication.run(SpringBootApplicationn.class);
 
