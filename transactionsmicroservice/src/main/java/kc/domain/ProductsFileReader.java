@@ -1,4 +1,4 @@
-package kc.domain.settings;
+package kc.domain;
 
 
 import kc.domain.settings.Producer;
