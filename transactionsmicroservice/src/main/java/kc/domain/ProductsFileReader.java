@@ -1,3 +1,4 @@
+/*
 package kc.domain;
 
 
@@ -20,24 +21,30 @@ public class ProductsFileReader {
 
     private File file;
     private  Random generator = new Random();
-    private final String filePath="/Users/macosmojave/Desktop/products_prices.txt";
+    //private final String filePath="/Users/macosmojave/Desktop/products_prices.txt";
     private Map<String, Double> productsPrices;
 
 
     @Autowired
   private Producer producer ;
 
- @PostConstruct
+*/
+/* @PostConstruct
     public void readFromFile() {
 
-        file = new File(filePath);
+     InputStream is = getClass().getClassLoader().getResourceAsStream("Products_Prices.txt");
+
         productsPrices = new HashMap<>();
 
-        if(file.exists() && file.length()>0){
+        *//*
+*/
+/*if(file.exists() && file.length()>0){*//*
+*/
+/*
 
             try {
-                FileReader fileReader = new FileReader(file);
-                BufferedReader reader = new BufferedReader(fileReader);
+                //FileReader fileReader = new FileReader(String.valueOf(is));
+                BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 
                 String line;
 
@@ -53,7 +60,8 @@ public class ProductsFileReader {
             }
         }
 
-    }
+    //}*//*
+
 
 
     @Scheduled(fixedDelay = 1000)
@@ -80,3 +88,4 @@ public class ProductsFileReader {
 
 
 }
+*/

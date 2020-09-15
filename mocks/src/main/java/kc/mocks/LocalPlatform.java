@@ -31,7 +31,7 @@ public class LocalPlatform implements BeforeEachCallback{
 
     public static void main(String[] args) throws Exception {
 
-        LocalDatabases.start();
+       // LocalDatabases.start();
 
         LocalZookeeper localZookeeper=new LocalZookeeper(2181);
 
