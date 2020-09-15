@@ -1,23 +1,28 @@
 package kc.domain.prices;
 
+
+
+
+
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.math.BigInteger;
 import java.util.*;
 import java.util.List;
 import java.util.concurrent.*;
+import java.util.stream.Stream;
 
 public class PriceUpdater {
 
 
     private static int numberOfThreads=2;
-    private static int numberOfMiliseconds;
+    private static int numberOfMiliseconds=100;
     private static int numberOfProducts=10;
     private Random generator = new Random();
     private static int count = 0;
 
-    public List<Long> lista=new ArrayList<>();
 
 
 
@@ -30,73 +35,89 @@ public class PriceUpdater {
         LocalKafkaProducer localKafkaProducer = new LocalKafkaProducer();
 
 
-
         ScheduledExecutorService service = Executors.newScheduledThreadPool(numberOfThreads);
 
 
-        Map<String,Double> products = priceUpdater.getRandomProducts();
+
+
+        ScheduledFuture<?> scheduledFuture = service.scheduleWithFixedDelay(
+                priceUpdater.sendToKafkaBroker(localKafkaProducer,
+                        priceUpdater.getRandomProducts()), 1, numberOfMiliseconds, TimeUnit.MILLISECONDS);
 
 
 
-        ScheduledFuture<?> scheduledFuture = service.scheduleAtFixedRate(
-                priceUpdater.sendToKafkaBroker(localKafkaProducer,products), 1, 100, TimeUnit.SECONDS);
 
 
-     /*   while(true){
+        while (true) {
 
-            System.out.println("LICZNIK = "+count);
-            Thread.sleep(1000);
+            if (count == numberOfProducts) {
 
-            if(count >= numberOfProducts){
-                System.out.println("Count is 5, cancel the scheduledFuture!");
+                System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" + PriceUpdater.count);
                 scheduledFuture.cancel(true);
                 service.shutdown();
                 break;
-            }*/
-        //}
-        System.out.println(priceUpdater.lista);
+            }
+
+
+        }
 
 
 
+        }
+
+
+
+/*
+    public Runnable sendToKafkaBroker(LocalKafkaProducer producer,ProductPrice product){
+
+        double leftLimit = -0.1D;
+        double rightLimit = 0.1D;
+        double generatedDouble = leftLimit + new Random().nextDouble() * (rightLimit - leftLimit);
+
+        return () -> {
+                producer.sendMessage(
+                        product.id+" "+product.price +(product.price* generatedDouble));
+                count++;
+
+        };
     }
+*/
 
 
+    public Runnable sendToKafkaBroker(LocalKafkaProducer producer,List<ProductPrice> products){
 
-    public Runnable sendToKafkaBroker(LocalKafkaProducer producer,Map<String,Double> products){
+        double leftLimit = -0.1D;
+        double rightLimit = 0.1D;
+        double generatedDouble = leftLimit + new Random().nextDouble() * (rightLimit - leftLimit);
 
 
         return () -> {
 
-            while(count!=numberOfProducts) {
+            for(ProductPrice s : products){
 
-                for (Map.Entry<String, Double> entry : products.entrySet()) {
+                producer.sendMessage(
+                        s.id+" "+s.price +(s.price* generatedDouble));
+                count++;
 
-                    producer.sendMessage(entry.getKey() + " " + entry.getValue()+"         ");
-                    lista.add(Thread.currentThread().getId());
-
-
-                    count++;
-
-                }
             }
-
         };
     }
 
 
-    public Map<String,Double> getRandomProducts(){
+    public List<ProductPrice> getRandomProducts(){
 
         Map<String,Double> productsPrices=readFromFile();
 
         List<String> keys= new ArrayList<>(productsPrices.keySet());
 
-        Map<String,Double> randomProducts = new HashMap<>();
+        List<ProductPrice> randomProducts=new ArrayList<>();
+
 
         for(int i=0;i<numberOfProducts;i++){
 
             String key =  keys.get(generator.nextInt(keys.size()));
 
-           randomProducts.put(key,productsPrices.get(key));
+           randomProducts.add(new ProductPrice(key,productsPrices.get(key)));
 
         }
         return randomProducts;
