@@ -1,8 +1,6 @@
 package kc.domain.prices;
-
-
-
-
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.awt.*;
 import java.io.BufferedReader;
@@ -18,13 +16,8 @@ public class PriceUpdater {
 
 
     private static int numberOfThreads=2;
-    private static int numberOfMiliseconds=100;
-    private static int numberOfProducts=10;
-    private Random generator = new Random();
-    private static int count = 0;
-
-
-
+    private static int productPriceUpdatesInvervalMs=100;
+    private static int numberOfProducts=1000;
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -34,74 +27,37 @@ public class PriceUpdater {
 
         LocalKafkaProducer localKafkaProducer = new LocalKafkaProducer();
 
-
         ScheduledExecutorService service = Executors.newScheduledThreadPool(numberOfThreads);
 
 
-
-
-        ScheduledFuture<?> scheduledFuture = service.scheduleWithFixedDelay(
-                priceUpdater.sendToKafkaBroker(localKafkaProducer,
-                        priceUpdater.getRandomProducts()), 1, numberOfMiliseconds, TimeUnit.MILLISECONDS);
-
-
-
-
-
-        while (true) {
-
-            if (count == numberOfProducts) {
-
-                System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" + PriceUpdater.count);
-                scheduledFuture.cancel(true);
-                service.shutdown();
-                break;
-            }
-
+        service.scheduleAtFixedRate(
+                priceUpdater.sendToKafkaBroker(localKafkaProducer), 1,productPriceUpdatesInvervalMs, TimeUnit.MILLISECONDS);
 
         }
 
 
 
-        }
+    public Runnable sendToKafkaBroker(LocalKafkaProducer producer){
 
-
-
-/*
-    public Runnable sendToKafkaBroker(LocalKafkaProducer producer,ProductPrice product){
-
-        double leftLimit = -0.1D;
-        double rightLimit = 0.1D;
-        double generatedDouble = leftLimit + new Random().nextDouble() * (rightLimit - leftLimit);
+        double percentageOfPriceModification = ThreadLocalRandom.current().nextDouble(-0.1, 0.1);
 
         return () -> {
-                producer.sendMessage(
-                        product.id+" "+product.price +(product.price* generatedDouble));
-                count++;
+            List<ProductPrice> productsToSend = getRandomProducts();
 
-        };
-    }
-*/
+            for(ProductPrice s : productsToSend){
 
+                s.price = s.price * percentageOfPriceModification;
 
-    public Runnable sendToKafkaBroker(LocalKafkaProducer producer,List<ProductPrice> products){
-
-        double leftLimit = -0.1D;
-        double rightLimit = 0.1D;
-        double generatedDouble = leftLimit + new Random().nextDouble() * (rightLimit - leftLimit);
-
-
-        return () -> {
-
-            for(ProductPrice s : products){
-
-                producer.sendMessage(
-                        s.id+" "+s.price +(s.price* generatedDouble));
-                count++;
+                try {
+                    producer.sendMessage(new ObjectMapper().writeValueAsString(s));
+                } catch (JsonProcessingException e) {
+                    e.printStackTrace();
+                }
 
             }
         };
     }
+
 
 
     public List<ProductPrice> getRandomProducts(){
@@ -115,9 +71,9 @@ public class PriceUpdater {
 
         for(int i=0;i<numberOfProducts;i++){
 
-            String key =  keys.get(generator.nextInt(keys.size()));
+            String key =  keys.get( ThreadLocalRandom.current().nextInt(keys.size()));
 
-           randomProducts.add(new ProductPrice(key,productsPrices.get(key)));
+            randomProducts.add(new ProductPrice(key,productsPrices.get(key)));
 
         }
         return randomProducts;
@@ -149,10 +105,4 @@ public class PriceUpdater {
         return productsPrices;
 
     }
-
-
-
-
-
-
 }
